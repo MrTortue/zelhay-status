@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zelhay Status</title>
+<meta name="description" content="Supervision externe indépendante des services Zelhay Host — preuve de SLA.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%2322c55e'/></svg>">
+<style>
+:root{
+  --bg:#f6f7f9;--card:#fff;--fg:#111827;--muted:#6b7280;--line:#e5e7eb;
+  --up:#22c55e;--down:#ef4444;--deg:#f59e0b;--none:#d1d5db;--accent:#2563eb;
+  --radius:12px;--font:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0b0f17;--card:#131a26;--fg:#e5e7eb;--muted:#9ca3af;--line:#1f2937;--none:#2a3443;}}
+:root[data-theme="dark"]{--bg:#0b0f17;--card:#131a26;--fg:#e5e7eb;--muted:#9ca3af;--line:#1f2937;--none:#2a3443;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);line-height:1.45}
+main{max-width:980px;margin:0 auto;padding:32px 16px 64px}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+h1{font-size:22px;margin:0;display:flex;align-items:center;gap:10px}
+h1 .logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#7c3aed)}
+.meta{color:var(--muted);font-size:13px}
+.banner{border-radius:var(--radius);padding:18px 20px;color:#fff;font-weight:600;font-size:18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.banner.up{background:var(--up)}.banner.down{background:var(--down)}.banner.degraded{background:var(--deg)}
+.banner small{font-weight:400;opacity:.9;font-size:13px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:20px 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+.kpi .l{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.kpi .v{font-size:26px;font-weight:700;font-variant-numeric:tabular-nums;margin-top:2px}
+.kpi .v.bad{color:var(--down)}.kpi .v.ok{color:var(--up)}
+.kpi .s{color:var(--muted);font-size:12px}
+section.group{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin:16px 0;overflow:hidden}
+section.group h2{margin:0;padding:14px 18px;font-size:15px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+section.group h2 .cnt{color:var(--muted);font-weight:400;font-size:13px}
+.target{padding:14px 18px;border-bottom:1px solid var(--line)}
+.target:last-child{border-bottom:0}
+.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.dot{width:10px;height:10px;border-radius:50%;flex:none}
+.dot.up{background:var(--up)}.dot.down{background:var(--down)}.dot.degraded{background:var(--deg)}
+.name{font-weight:600;flex:1 1 180px}
+.type{font-family:var(--mono);font-size:11px;color:var(--muted);background:var(--bg);padding:2px 6px;border-radius:6px}
+.pct{font-variant-numeric:tabular-nums;font-weight:600;min-width:72px;text-align:right}
+.lat{color:var(--muted);font-size:13px;min-width:70px;text-align:right}
+.bars{display:flex;gap:2px;margin-top:10px;height:28px}
+.bars i{flex:1;border-radius:2px;background:var(--none);min-width:3px}
+.bars i.up{background:var(--up)}.bars i.down{background:var(--down)}.bars i.deg{background:var(--deg)}
+.bars i:hover{outline:2px solid var(--fg);outline-offset:1px}
+.axis{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;margin-top:4px}
+.err{color:var(--down);font-size:12px;margin-top:6px;font-family:var(--mono)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tabs button{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:8px;padding:5px 10px;font-size:13px;cursor:pointer}
+.tabs button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.incident{padding:12px 18px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center}
+.incident:last-child{border-bottom:0}
+.incident .when{color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums}
+.incident a{color:var(--accent);text-decoration:none}
+.empty{padding:18px;color:var(--muted);font-size:14px}
+details{margin-top:24px;color:var(--muted);font-size:13px}
+details summary{cursor:pointer;color:var(--fg)}
+details ul{padding-left:18px}
+footer{margin-top:28px;color:var(--muted);font-size:12px;text-align:center}
+footer a{color:var(--accent)}
+.warn{font-size:12px;color:var(--deg);margin-left:6px}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1><span class="logo"></span>Zelhay Status</h1>
+  <div class="meta" id="meta">Chargement…</div>
+</header>
+
+<div id="banner" class="banner up">Chargement…</div>
+
+<div class="kpis" id="kpis"></div>
+
+<div class="row" style="justify-content:space-between;margin:8px 0 4px">
+  <div class="tabs" id="tabs"></div>
+  <div class="meta" id="legend">■ opérationnel &nbsp;■ dégradé &nbsp;■ panne &nbsp;■ aucune donnée</div>
+</div>
+
+<div id="groups"></div>
+
+<section class="group">
+  <h2>Incidents <span class="cnt" id="inc-cnt"></span></h2>
+  <div id="incidents"></div>
+</section>
+
+<details>
+  <summary>Méthode de calcul &amp; indépendance de la mesure</summary>
+  <ul>
+    <li>Les sondes s'exécutent sur <strong>GitHub Actions</strong>, en dehors de l'infrastructure Zelhay. Chaque résultat est commité dans le dépôt : l'historique est horodaté par git et non modifiable a posteriori sans trace.</li>
+    <li><strong>Disponibilité</strong> = sondes réussies ÷ sondes totales sur la fenêtre, par cible. La valeur globale est la moyenne des cibles.</li>
+    <li>Un échec est confirmé après un <strong>nouvel essai immédiat</strong> ; une <strong>panne</strong> (incident) n'est déclarée qu'après <span id="confirm-n">2</span> échecs consécutifs. Un échec isolé est affiché comme « dégradé ».</li>
+    <li>Pour les adresses IP, un ICMP sans réponse est contre-vérifié par une connexion TCP sur une liste de ports usuels (443, 80, 22, …) avant d'être compté en échec.</li>
+    <li>Chaque incident ouvre automatiquement une Issue GitHub, fermée au retour du service, ce qui constitue le journal public.</li>
+  </ul>
+</details>
+
+<footer>Supervision externe indépendante · données brutes dans <a href="data/summary.json">summary.json</a> · <span id="repo-link"></span></footer>
+</main>
+
+<script>
+const WINDOWS = ["24h","7d","30d","90d"];
+const DAYS = {"24h":1,"7d":7,"30d":30,"90d":90};
+let win = localStorage.getItem("win") || "90d";
+let summary, histories = {};
+
+const fmt = n => n == null ? "—" : n.toFixed(n >= 99.95 ? 3 : 2) + " %";
+const cls = n => n == null ? "" : (n >= summary.sla_target ? "ok" : "bad");
+const rel = ts => { const s = Math.round(Date.now()/1000 - ts); return s < 90 ? `il y a ${s} s` : s < 5400 ? `il y a ${Math.round(s/60)} min` : `il y a ${Math.round(s/3600)} h`; };
+const dt = iso => new Date(iso).toLocaleString("fr-FR", {dateStyle:"short", timeStyle:"short"});
+const dur = (a,b) => { const m = Math.round((new Date(b||Date.now()) - new Date(a))/60000); return m < 60 ? `${m} min` : `${(m/60).toFixed(1)} h`; };
+
+async function load(){
+  summary = await (await fetch("data/summary.json?"+Date.now())).json();
+  const ids = summary.groups.flatMap(g => g.targets.map(t => t.id));
+  await Promise.all(ids.map(async id => { try { histories[id] = await (await fetch(`data/history/${id}.json?`+Date.now())).json(); } catch { histories[id] = []; } }));
+  let inc = []; try { inc = await (await fetch("data/incidents.json?"+Date.now())).json(); } catch {}
+  render(inc);
+}
+
+function buckets(hist, days){
+  // Découpe la fenêtre en N colonnes (jours si >1j, sinon heures) et agrège.
+  const n = days === 1 ? 24 : days;
+  const span = days === 1 ? 3600 : 86400;
+  const now = Math.floor(Date.now()/1000);
+  const start = now - n*span;
+  const b = Array.from({length:n}, () => ({ok:0, ko:0}));
+  for (const s of hist){ if (s.ts < start) continue; const i = Math.min(n-1, Math.floor((s.ts-start)/span)); s.ok ? b[i].ok++ : b[i].ko++; }
+  return b.map((x,i) => {
+    const tot = x.ok + x.ko, pct = tot ? 100*x.ok/tot : null;
+    const c = tot === 0 ? "" : x.ko === 0 ? "up" : pct < 50 ? "down" : "deg";
+    const when = new Date((start + i*span)*1000);
+    const label = days === 1 ? when.toLocaleTimeString("fr-FR",{hour:"2-digit"}) + " h" : when.toLocaleDateString("fr-FR",{day:"2-digit",month:"short"});
+    return {c, title: tot ? `${label} · ${pct.toFixed(1)} % (${x.ko} échec${x.ko>1?"s":""} / ${tot})` : `${label} · aucune donnée`};
+  });
+}
+
+function render(incidents){
+  const all = summary.groups.flatMap(g => g.targets);
+  const ko = all.filter(t => t.status !== "up");
+  const b = document.getElementById("banner");
+  b.className = "banner " + summary.overall;
+  b.innerHTML = { up:"✅ Tous les systèmes sont opérationnels", degraded:`⚠️ ${ko.length} service(s) en état dégradé`, down:`🔴 ${all.filter(t=>t.status==="down").length} service(s) en panne` }[summary.overall]
+    + `<small>Dernier contrôle ${rel(Math.floor(new Date(summary.generated_at)/1000))}</small>`;
+  document.getElementById("meta").textContent = `${all.length} cibles · objectif SLA ${summary.sla_target} %`;
+  document.getElementById("confirm-n").textContent = summary.confirm_failures;
+
+  document.getElementById("kpis").innerHTML = WINDOWS.map(w => `<div class="kpi"><div class="l">Disponibilité ${w}</div><div class="v ${cls(summary.global_uptime[w])}">${fmt(summary.global_uptime[w])}</div><div class="s">objectif ${summary.sla_target} %</div></div>`).join("");
+
+  document.getElementById("tabs").innerHTML = WINDOWS.map(w => `<button class="${w===win?"on":""}" data-w="${w}">${w}</button>`).join("");
+  document.querySelectorAll("#tabs button").forEach(el => el.onclick = () => { win = el.dataset.w; localStorage.setItem("win", win); render(incidents); });
+
+  const days = DAYS[win];
+  document.getElementById("groups").innerHTML = summary.groups.map(g => `
+    <section class="group"><h2>${g.name}<span class="cnt">${g.targets.filter(t=>t.status==="up").length}/${g.targets.length} opérationnels</span></h2>
+    ${g.targets.map(t => {
+      const bars = buckets(histories[t.id] || [], days);
+      const tls = t.last.tls_days_left;
+      return `<div class="target">
+        <div class="row"><span class="dot ${t.status}"></span><span class="name">${t.name}${tls != null && tls < 14 ? `<span class="warn">⚠ TLS expire dans ${tls} j</span>` : ""}</span>
+          <span class="type">${t.type}</span><span class="lat">${t.last.ms != null ? t.last.ms + " ms" : "—"}</span><span class="pct ${cls(t.uptime[win])}">${fmt(t.uptime[win])}</span></div>
+        <div class="bars">${bars.map(x => `<i class="${x.c}" title="${x.title}"></i>`).join("")}</div>
+        <div class="axis"><span>il y a ${win}</span><span>maintenant</span></div>
+        ${t.last.err ? `<div class="err">${t.last.err}</div>` : ""}
+      </div>`; }).join("")}
+    </section>`).join("");
+
+  const sorted = [...incidents].sort((a,b) => new Date(b.started_at) - new Date(a.started_at)).slice(0,30);
+  const open = incidents.filter(i => !i.resolved_at).length;
+  document.getElementById("inc-cnt").textContent = open ? `${open} en cours` : "aucun en cours";
+  document.getElementById("incidents").innerHTML = sorted.length ? sorted.map(i => `<div class="incident">
+    <span class="dot ${i.resolved_at ? "up" : "down"}"></span>
+    <div><strong>${i.name}</strong> — ${i.resolved_at ? "résolu" : "en cours"}, durée ${dur(i.started_at, i.resolved_at)}${i.issue ? ` · <a href="../../issues/${i.issue}">#${i.issue}</a>` : ""}<div class="err" style="color:var(--muted)">${i.error||""}</div></div>
+    <span class="when">${dt(i.started_at)}</span></div>`).join("") : `<div class="empty">Aucun incident enregistré sur la période.</div>`;
+}
+load().catch(e => { document.getElementById("banner").textContent = "Impossible de charger les données : " + e; });
+</script>
+</body>
+</html>

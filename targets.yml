@@ -1,0 +1,38 @@
+# Cibles surveillées par la page de status.
+# Types : http (HTTPS + expiration TLS), tcp (connexion sur chaque port listé).
+
+settings:
+  timeout_seconds: 8
+  retry_delays: [3, 10]      # secondes entre les ré-essais avant de compter un échec (3 essais au total)
+  confirm_failures: 2
+  history_days: 90
+  sla_target: 99.9
+  open_github_issues: true
+
+groups:
+  - name: Web
+    targets:
+      - id: web-site
+        name: zelhay-host.fr
+        type: http
+        url: https://zelhay-host.fr
+      - id: web-web
+        name: web.zelhay-host.fr
+        type: http
+        url: https://web.zelhay-host.fr
+      - id: web-game
+        name: game.zelhay-host.fr
+        type: http
+        url: https://game.zelhay-host.fr
+      - id: web-console
+        name: console.zelhay-host.fr
+        type: http
+        url: https://console.zelhay-host.fr
+
+  - name: Infrastructure (eu-pa5) — joignabilité (ping, sinon port ouvert)
+    targets:
+      - { id: ip-31-185-105-131, name: 31.185.105.131, type: ping, host: 31.185.105.131, fallback: { type: tcp_any, ports: [443, 80, 22, 21, 25, 3389, 8080, 8443] } }
+      - { id: ip-87-76-211-101, name: 87.76.211.101, type: ping, host: 87.76.211.101, fallback: { type: tcp_any, ports: [443, 80, 22, 21, 25, 3389, 8080, 8443] } }
+      - { id: ip-87-76-211-103, name: 87.76.211.103, type: ping, host: 87.76.211.103, fallback: { type: tcp_any, ports: [443, 80, 22, 21, 25, 3389, 8080, 8443] } }
+      - { id: ip-87-76-211-105, name: 87.76.211.105, type: ping, host: 87.76.211.105, fallback: { type: tcp_any, ports: [443, 80, 22, 21, 25, 3389, 8080, 8443] } }
+      - { id: ip-87-76-211-106, name: 87.76.211.106, type: ping, host: 87.76.211.106, fallback: { type: tcp_any, ports: [443, 80, 22, 21, 25, 3389, 8080, 8443] } }

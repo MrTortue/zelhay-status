@@ -1,0 +1,119 @@
+name: Status probe
+
+on:
+  schedule:
+    # Filet de secours : la cadence 5 min est assurée par le job "relance"
+    # (auto-chaînage). Le cron ne sert qu'à redémarrer la chaîne si elle casse.
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+    inputs:
+      chain:
+        description: "Relancer automatiquement toutes les 5 min (chaînage)"
+        type: boolean
+        default: true
+      reset:
+        description: "Effacer tout l'historique et les incidents (repartir de zéro)"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: [targets.yml, probe/**, site/**, .github/workflows/status.yml]
+
+# Pas de concurrency globale : un déploiement Pages resté bloqué en "waiting"
+# (incident GitHub, 06/10) a retenu le groupe pendant 2 jours et fait annuler
+# tous les runs suivants. Chaque job a désormais son propre groupe.
+permissions:
+  actions: write      # auto-relance via workflow_dispatch
+  contents: write     # commit des données dans data/
+  issues: write       # ouverture/fermeture des incidents
+  pages: write        # déploiement GitHub Pages
+  id-token: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: status-probe
+      cancel-in-progress: false
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install --quiet pyyaml
+
+      - name: Remise à zéro de l'historique
+        if: ${{ inputs.reset }}
+        run: rm -rf data
+
+      - name: Sonder les cibles
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python probe/probe.py
+
+      - name: Enregistrer l'historique
+        run: |
+          git config user.name "status-bot"
+          git config user.email "status-bot@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet && exit 0
+          git commit -m "status: $(date -u +'%Y-%m-%dT%H:%MZ') [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      - name: Assembler le site
+        run: |
+          mkdir -p _site
+          cp -r site/* _site/
+          cp -r data _site/data
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: probe
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    concurrency:
+      group: status-deploy
+      cancel-in-progress: true   # le déploiement le plus récent gagne
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  # Chaînage : attend que 5 min se soient écoulées depuis le début de ce run,
+  # puis déclenche le suivant. Ne crée pas de seconde chaîne si un autre run
+  # est déjà en attente ou en cours.
+  relance:
+    needs: probe
+    if: always() && (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.chain))
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: ${{ github.repository }}
+      INTERVAL: 300
+    steps:
+      - name: Attendre la fin de l'intervalle
+        run: |
+          started=$(gh api "repos/$GH_REPO/actions/runs/${{ github.run_id }}" --jq .run_started_at)
+          elapsed=$(( $(date +%s) - $(date -d "$started" +%s) ))
+          wait=$(( INTERVAL - elapsed ))
+          echo "Run démarré il y a ${elapsed}s, attente ${wait}s"
+          [ "$wait" -gt 0 ] && sleep "$wait" || true
+      - name: Déclencher le run suivant
+        run: |
+          others=$(gh api "repos/$GH_REPO/actions/workflows/status.yml/runs?per_page=10" \
+            --jq '[.workflow_runs[] | select(.id != ${{ github.run_id }}) | select(.status == "queued" or .status == "in_progress")] | length')
+          if [ "$others" -gt 0 ]; then echo "Un autre run est déjà actif ($others) : pas de relance."; exit 0; fi
+          gh workflow run status.yml --ref main -f chain=true -f reset=false
+          echo "Run suivant déclenché."

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-16T17:17:46+00:00",
+ "generated_at": "2026-10-16T17:22:51+00:00",
  "sla_target": 99.9,
  "confirm_failures": 2,
  "groups": [
@@ -10,13 +10,14 @@
      "id": "web-site",
      "name": "zelhay-host.fr",
      "type": "http",
-     "status": "degraded",
+     "status": "up",
      "last": {
-      "ts": 1792171104,
-      "ok": false,
-      "ms": null,
-      "err": "URLError: <urlopen error timed out>",
-      "via": "http"
+      "ts": 1792171372,
+      "ok": true,
+      "ms": 979,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 3
      },
      "uptime": {
       "24h": 99.654,
@@ -24,19 +25,20 @@
       "30d": 99.938,
       "90d": 99.938
      },
-     "avg_ms_24h": 944
+     "avg_ms_24h": 945
     },
     {
      "id": "web-web",
      "name": "web.zelhay-host.fr",
      "type": "http",
-     "status": "degraded",
+     "status": "up",
      "last": {
-      "ts": 1792171104,
-      "ok": false,
-      "ms": null,
-      "err": "URLError: <urlopen error timed out>",
-      "via": "http"
+      "ts": 1792171372,
+      "ok": true,
+      "ms": 1074,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 6
      },
      "uptime": {
       "24h": 99.654,
@@ -50,13 +52,14 @@
      "id": "web-game",
      "name": "game.zelhay-host.fr",
      "type": "http",
-     "status": "degraded",
+     "status": "up",
      "last": {
-      "ts": 1792171104,
-      "ok": false,
-      "ms": null,
-      "err": "URLError: <urlopen error timed out>",
-      "via": "http"
+      "ts": 1792171372,
+      "ok": true,
+      "ms": 1139,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 6
      },
      "uptime": {
       "24h": 99.654,
@@ -70,13 +73,14 @@
      "id": "web-console",
      "name": "console.zelhay-host.fr",
      "type": "http",
-     "status": "degraded",
+     "status": "up",
      "last": {
-      "ts": 1792171104,
-      "ok": false,
-      "ms": null,
-      "err": "URLError: <urlopen error timed out>",
-      "via": "http"
+      "ts": 1792171372,
+      "ok": true,
+      "ms": 1122,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 6
      },
      "uptime": {
       "24h": 99.654,
@@ -95,13 +99,13 @@
      "id": "ip-31-185-105-131",
      "name": "31.185.105.131",
      "type": "ping",
-     "status": "down",
+     "status": "up",
      "last": {
-      "ts": 1792171167,
-      "ok": false,
-      "ms": 8003,
-      "err": "ICMP sans réponse",
-      "via": "ping"
+      "ts": 1792171424,
+      "ok": true,
+      "ms": 162,
+      "err": null,
+      "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 99.308,
@@ -109,19 +113,19 @@
       "30d": 99.875,
       "90d": 99.875
      },
-     "avg_ms_24h": 178
+     "avg_ms_24h": 179
     },
     {
      "id": "ip-87-76-211-101",
      "name": "87.76.211.101",
      "type": "ping",
-     "status": "down",
+     "status": "up",
      "last": {
-      "ts": 1792171167,
-      "ok": false,
-      "ms": 8002,
-      "err": "ICMP sans réponse",
-      "via": "ping"
+      "ts": 1792171424,
+      "ok": true,
+      "ms": 165,
+      "err": null,
+      "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 99.308,
@@ -135,13 +139,13 @@
      "id": "ip-87-76-211-103",
      "name": "87.76.211.103",
      "type": "ping",
-     "status": "down",
+     "status": "up",
      "last": {
-      "ts": 1792171167,
-      "ok": false,
-      "ms": 8002,
-      "err": "ICMP sans réponse",
-      "via": "ping"
+      "ts": 1792171424,
+      "ok": true,
+      "ms": 176,
+      "err": null,
+      "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 99.308,
@@ -155,13 +159,13 @@
      "id": "ip-87-76-211-105",
      "name": "87.76.211.105",
      "type": "ping",
-     "status": "down",
+     "status": "up",
      "last": {
-      "ts": 1792171167,
-      "ok": false,
-      "ms": 8001,
-      "err": "ICMP sans réponse",
-      "via": "ping"
+      "ts": 1792171408,
+      "ok": true,
+      "ms": 166,
+      "err": null,
+      "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 99.308,
@@ -175,13 +179,13 @@
      "id": "ip-87-76-211-106",
      "name": "87.76.211.106",
      "type": "ping",
-     "status": "down",
+     "status": "up",
      "last": {
-      "ts": 1792171167,
-      "ok": false,
-      "ms": 8003,
-      "err": "ICMP sans réponse",
-      "via": "ping"
+      "ts": 1792171408,
+      "ok": true,
+      "ms": 174,
+      "err": null,
+      "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 99.308,
@@ -194,7 +198,7 @@
    ]
   }
  ],
- "overall": "down",
+ "overall": "up",
  "global_uptime": {
   "24h": 99.462,
   "7d": 99.903,

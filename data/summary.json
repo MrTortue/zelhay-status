@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-16T05:11:50+00:00",
+ "generated_at": "2026-10-16T05:16:52+00:00",
  "sla_target": 99.9,
  "confirm_failures": 2,
  "groups": [
@@ -12,9 +12,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1792127511,
+      "ts": 1792127815,
       "ok": true,
-      "ms": 766,
+      "ms": 1140,
       "err": null,
       "via": "http",
       "tls_days_left": 3
@@ -25,7 +25,7 @@
       "30d": 100.0,
       "90d": 100.0
      },
-     "avg_ms_24h": 937
+     "avg_ms_24h": 938
     },
     {
      "id": "web-web",
@@ -33,9 +33,51 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1792127512,
+      "ts": 1792127815,
       "ok": true,
-      "ms": 1134,
+      "ms": 1295,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 3
+     },
+     "uptime": {
+      "24h": 100.0,
+      "7d": 100.0,
+      "30d": 100.0,
+      "90d": 100.0
+     },
+     "avg_ms_24h": 1079
+    },
+    {
+     "id": "web-game",
+     "name": "game.zelhay-host.fr",
+     "type": "http",
+     "status": "up",
+     "last": {
+      "ts": 1792127815,
+      "ok": true,
+      "ms": 1321,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 3
+     },
+     "uptime": {
+      "24h": 100.0,
+      "7d": 100.0,
+      "30d": 100.0,
+      "90d": 100.0
+     },
+     "avg_ms_24h": 1099
+    },
+    {
+     "id": "web-console",
+     "name": "console.zelhay-host.fr",
+     "type": "http",
+     "status": "up",
+     "last": {
+      "ts": 1792127815,
+      "ok": true,
+      "ms": 1270,
       "err": null,
       "via": "http",
       "tls_days_left": 3
@@ -47,48 +89,6 @@
       "90d": 100.0
      },
      "avg_ms_24h": 1078
-    },
-    {
-     "id": "web-game",
-     "name": "game.zelhay-host.fr",
-     "type": "http",
-     "status": "up",
-     "last": {
-      "ts": 1792127512,
-      "ok": true,
-      "ms": 1134,
-      "err": null,
-      "via": "http",
-      "tls_days_left": 3
-     },
-     "uptime": {
-      "24h": 100.0,
-      "7d": 100.0,
-      "30d": 100.0,
-      "90d": 100.0
-     },
-     "avg_ms_24h": 1098
-    },
-    {
-     "id": "web-console",
-     "name": "console.zelhay-host.fr",
-     "type": "http",
-     "status": "up",
-     "last": {
-      "ts": 1792127511,
-      "ok": true,
-      "ms": 878,
-      "err": null,
-      "via": "http",
-      "tls_days_left": 3
-     },
-     "uptime": {
-      "24h": 100.0,
-      "7d": 100.0,
-      "30d": 100.0,
-      "90d": 100.0
-     },
-     "avg_ms_24h": 1077
     }
    ]
   },
@@ -101,9 +101,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1792127563,
+      "ts": 1792127865,
       "ok": true,
-      "ms": 124,
+      "ms": 150,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -113,7 +113,7 @@
       "30d": 100.0,
       "90d": 100.0
      },
-     "avg_ms_24h": 124
+     "avg_ms_24h": 125
     },
     {
      "id": "ip-87-76-211-101",
@@ -121,9 +121,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1792127563,
+      "ts": 1792127865,
       "ok": true,
-      "ms": 124,
+      "ms": 166,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -133,7 +133,7 @@
       "30d": 100.0,
       "90d": 100.0
      },
-     "avg_ms_24h": 134
+     "avg_ms_24h": 135
     },
     {
      "id": "ip-87-76-211-103",
@@ -141,9 +141,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1792127563,
+      "ts": 1792127865,
       "ok": true,
-      "ms": 127,
+      "ms": 165,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -161,9 +161,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1792127547,
+      "ts": 1792127849,
       "ok": true,
-      "ms": 137,
+      "ms": 170,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -181,9 +181,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1792127547,
+      "ts": 1792127849,
       "ok": true,
-      "ms": 121,
+      "ms": 166,
       "err": null,
       "via": "ping→tcp_any"
      },

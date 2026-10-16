@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-16T17:07:43+00:00",
+ "generated_at": "2026-10-16T17:12:45+00:00",
  "sla_target": 99.9,
  "confirm_failures": 2,
  "groups": [
@@ -12,9 +12,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1792170464,
+      "ts": 1792170766,
       "ok": true,
-      "ms": 860,
+      "ms": 1045,
       "err": null,
       "via": "http",
       "tls_days_left": 3
@@ -25,7 +25,7 @@
       "30d": 100.0,
       "90d": 100.0
      },
-     "avg_ms_24h": 943
+     "avg_ms_24h": 944
     },
     {
      "id": "web-web",
@@ -33,9 +33,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1792170465,
+      "ts": 1792170766,
       "ok": true,
-      "ms": 979,
+      "ms": 1065,
       "err": null,
       "via": "http",
       "tls_days_left": 6
@@ -54,9 +54,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1792170465,
+      "ts": 1792170766,
       "ok": true,
-      "ms": 997,
+      "ms": 1043,
       "err": null,
       "via": "http",
       "tls_days_left": 6
@@ -67,7 +67,7 @@
       "30d": 100.0,
       "90d": 100.0
      },
-     "avg_ms_24h": 1104
+     "avg_ms_24h": 1103
     },
     {
      "id": "web-console",
@@ -75,9 +75,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1792170465,
+      "ts": 1792170766,
       "ok": true,
-      "ms": 1015,
+      "ms": 1068,
       "err": null,
       "via": "http",
       "tls_days_left": 6
@@ -99,110 +99,110 @@
      "id": "ip-31-185-105-131",
      "name": "31.185.105.131",
      "type": "ping",
-     "status": "up",
+     "status": "degraded",
      "last": {
-      "ts": 1792170516,
-      "ok": true,
-      "ms": 137,
-      "err": null,
-      "via": "ping→tcp_any"
+      "ts": 1792170866,
+      "ok": false,
+      "ms": 8002,
+      "err": "ICMP sans réponse",
+      "via": "ping"
      },
      "uptime": {
-      "24h": 100.0,
-      "7d": 100.0,
-      "30d": 100.0,
-      "90d": 100.0
+      "24h": 99.654,
+      "7d": 99.938,
+      "30d": 99.938,
+      "90d": 99.938
      },
-     "avg_ms_24h": 124
+     "avg_ms_24h": 151
     },
     {
      "id": "ip-87-76-211-101",
      "name": "87.76.211.101",
      "type": "ping",
-     "status": "up",
+     "status": "degraded",
      "last": {
-      "ts": 1792170516,
-      "ok": true,
-      "ms": 145,
-      "err": null,
-      "via": "ping→tcp_any"
+      "ts": 1792170866,
+      "ok": false,
+      "ms": 8003,
+      "err": "ICMP sans réponse",
+      "via": "ping"
      },
      "uptime": {
-      "24h": 100.0,
-      "7d": 100.0,
-      "30d": 100.0,
-      "90d": 100.0
+      "24h": 99.654,
+      "7d": 99.938,
+      "30d": 99.938,
+      "90d": 99.938
      },
-     "avg_ms_24h": 134
+     "avg_ms_24h": 162
     },
     {
      "id": "ip-87-76-211-103",
      "name": "87.76.211.103",
      "type": "ping",
-     "status": "up",
+     "status": "degraded",
      "last": {
-      "ts": 1792170516,
-      "ok": true,
-      "ms": 148,
-      "err": null,
-      "via": "ping→tcp_any"
+      "ts": 1792170866,
+      "ok": false,
+      "ms": 8001,
+      "err": "ICMP sans réponse",
+      "via": "ping"
      },
      "uptime": {
-      "24h": 100.0,
-      "7d": 100.0,
-      "30d": 100.0,
-      "90d": 100.0
+      "24h": 99.654,
+      "7d": 99.938,
+      "30d": 99.938,
+      "90d": 99.938
      },
-     "avg_ms_24h": 133
+     "avg_ms_24h": 161
     },
     {
      "id": "ip-87-76-211-105",
      "name": "87.76.211.105",
      "type": "ping",
-     "status": "up",
+     "status": "degraded",
      "last": {
-      "ts": 1792170500,
-      "ok": true,
-      "ms": 149,
-      "err": null,
-      "via": "ping→tcp_any"
+      "ts": 1792170866,
+      "ok": false,
+      "ms": 8003,
+      "err": "ICMP sans réponse",
+      "via": "ping"
      },
      "uptime": {
-      "24h": 100.0,
-      "7d": 100.0,
-      "30d": 100.0,
-      "90d": 100.0
+      "24h": 99.654,
+      "7d": 99.938,
+      "30d": 99.938,
+      "90d": 99.938
      },
-     "avg_ms_24h": 134
+     "avg_ms_24h": 161
     },
     {
      "id": "ip-87-76-211-106",
      "name": "87.76.211.106",
      "type": "ping",
-     "status": "up",
+     "status": "degraded",
      "last": {
-      "ts": 1792170500,
-      "ok": true,
-      "ms": 144,
-      "err": null,
-      "via": "ping→tcp_any"
+      "ts": 1792170866,
+      "ok": false,
+      "ms": 8003,
+      "err": "ICMP sans réponse",
+      "via": "ping"
      },
      "uptime": {
-      "24h": 100.0,
-      "7d": 100.0,
-      "30d": 100.0,
-      "90d": 100.0
+      "24h": 99.654,
+      "7d": 99.938,
+      "30d": 99.938,
+      "90d": 99.938
      },
-     "avg_ms_24h": 134
+     "avg_ms_24h": 161
     }
    ]
   }
  ],
- "overall": "up",
+ "overall": "degraded",
  "global_uptime": {
-  "24h": 100.0,
-  "7d": 100.0,
-  "30d": 100.0,
-  "90d": 100.0
+  "24h": 99.808,
+  "7d": 99.966,
+  "30d": 99.966,
+  "90d": 99.966
  }
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T02:53:50+00:00",
+ "generated_at": "2026-10-20T02:58:50+00:00",
  "sla_target": 99.9,
  "confirm_failures": 2,
  "groups": [
@@ -12,9 +12,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1792464832,
+      "ts": 1792465132,
       "ok": true,
-      "ms": 1024,
+      "ms": 1708,
       "err": null,
       "via": "http",
       "tls_days_left": 3
@@ -25,7 +25,7 @@
       "30d": 99.96,
       "90d": 99.96
      },
-     "avg_ms_24h": 944
+     "avg_ms_24h": 948
     },
     {
      "id": "web-web",
@@ -33,51 +33,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1792464832,
+      "ts": 1792465132,
       "ok": true,
-      "ms": 973,
-      "err": null,
-      "via": "http",
-      "tls_days_left": 6
-     },
-     "uptime": {
-      "24h": 100.0,
-      "7d": 99.948,
-      "30d": 99.96,
-      "90d": 99.96
-     },
-     "avg_ms_24h": 1082
-    },
-    {
-     "id": "web-game",
-     "name": "game.zelhay-host.fr",
-     "type": "http",
-     "status": "up",
-     "last": {
-      "ts": 1792464832,
-      "ok": true,
-      "ms": 1553,
-      "err": null,
-      "via": "http",
-      "tls_days_left": 6
-     },
-     "uptime": {
-      "24h": 100.0,
-      "7d": 99.948,
-      "30d": 99.96,
-      "90d": 99.96
-     },
-     "avg_ms_24h": 1105
-    },
-    {
-     "id": "web-console",
-     "name": "console.zelhay-host.fr",
-     "type": "http",
-     "status": "up",
-     "last": {
-      "ts": 1792464832,
-      "ok": true,
-      "ms": 1150,
+      "ms": 1577,
       "err": null,
       "via": "http",
       "tls_days_left": 6
@@ -89,6 +47,48 @@
       "90d": 99.96
      },
      "avg_ms_24h": 1086
+    },
+    {
+     "id": "web-game",
+     "name": "game.zelhay-host.fr",
+     "type": "http",
+     "status": "up",
+     "last": {
+      "ts": 1792465132,
+      "ok": true,
+      "ms": 1763,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 6
+     },
+     "uptime": {
+      "24h": 100.0,
+      "7d": 99.948,
+      "30d": 99.96,
+      "90d": 99.96
+     },
+     "avg_ms_24h": 1109
+    },
+    {
+     "id": "web-console",
+     "name": "console.zelhay-host.fr",
+     "type": "http",
+     "status": "up",
+     "last": {
+      "ts": 1792465132,
+      "ok": true,
+      "ms": 1754,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 6
+     },
+     "uptime": {
+      "24h": 100.0,
+      "7d": 99.948,
+      "30d": 99.96,
+      "90d": 99.96
+     },
+     "avg_ms_24h": 1089
     }
    ]
   },
@@ -101,9 +101,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1792464884,
+      "ts": 1792465183,
       "ok": true,
-      "ms": 127,
+      "ms": 131,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -121,9 +121,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1792464884,
+      "ts": 1792465183,
       "ok": true,
-      "ms": 140,
+      "ms": 123,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -141,19 +141,19 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1792464884,
+      "ts": 1792465183,
       "ok": true,
-      "ms": 143,
+      "ms": 130,
       "err": null,
       "via": "ping→tcp_any"
      },
      "uptime": {
-      "24h": 57.261,
+      "24h": 57.676,
       "7d": 93.955,
-      "30d": 95.334,
-      "90d": 95.334
+      "30d": 95.336,
+      "90d": 95.336
      },
-     "avg_ms_24h": 3497
+     "avg_ms_24h": 3464
     },
     {
      "id": "ip-87-76-211-105",
@@ -161,9 +161,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1792464868,
+      "ts": 1792465167,
       "ok": true,
-      "ms": 136,
+      "ms": 132,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -181,9 +181,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1792464868,
+      "ts": 1792465167,
       "ok": true,
-      "ms": 148,
+      "ms": 130,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -200,7 +200,7 @@
  ],
  "overall": "up",
  "global_uptime": {
-  "24h": 95.251,
+  "24h": 95.297,
   "7d": 99.259,
   "30d": 99.428,
   "90d": 99.428

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T07:17:10+00:00",
+ "generated_at": "2026-10-26T07:22:10+00:00",
  "sla_target": 99.9,
  "confirm_failures": 2,
  "groups": [
@@ -12,9 +12,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1792999032,
+      "ts": 1792999331,
       "ok": true,
-      "ms": 1094,
+      "ms": 1034,
       "err": null,
       "via": "http",
       "tls_days_left": 3
@@ -25,7 +25,7 @@
       "30d": 99.902,
       "90d": 99.902
      },
-     "avg_ms_24h": 938
+     "avg_ms_24h": 939
     },
     {
      "id": "web-web",
@@ -33,51 +33,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1792999032,
+      "ts": 1792999331,
       "ok": true,
-      "ms": 1190,
-      "err": null,
-      "via": "http",
-      "tls_days_left": 3
-     },
-     "uptime": {
-      "24h": 99.618,
-      "7d": 99.831,
-      "30d": 99.902,
-      "90d": 99.902
-     },
-     "avg_ms_24h": 1082
-    },
-    {
-     "id": "web-game",
-     "name": "game.zelhay-host.fr",
-     "type": "http",
-     "status": "up",
-     "last": {
-      "ts": 1792999032,
-      "ok": true,
-      "ms": 1096,
-      "err": null,
-      "via": "http",
-      "tls_days_left": 3
-     },
-     "uptime": {
-      "24h": 99.618,
-      "7d": 99.831,
-      "30d": 99.902,
-      "90d": 99.902
-     },
-     "avg_ms_24h": 1075
-    },
-    {
-     "id": "web-console",
-     "name": "console.zelhay-host.fr",
-     "type": "http",
-     "status": "up",
-     "last": {
-      "ts": 1792999032,
-      "ok": true,
-      "ms": 1240,
+      "ms": 1139,
       "err": null,
       "via": "http",
       "tls_days_left": 3
@@ -89,6 +47,48 @@
       "90d": 99.902
      },
      "avg_ms_24h": 1083
+    },
+    {
+     "id": "web-game",
+     "name": "game.zelhay-host.fr",
+     "type": "http",
+     "status": "up",
+     "last": {
+      "ts": 1792999331,
+      "ok": true,
+      "ms": 1169,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 3
+     },
+     "uptime": {
+      "24h": 99.618,
+      "7d": 99.831,
+      "30d": 99.902,
+      "90d": 99.902
+     },
+     "avg_ms_24h": 1076
+    },
+    {
+     "id": "web-console",
+     "name": "console.zelhay-host.fr",
+     "type": "http",
+     "status": "up",
+     "last": {
+      "ts": 1792999331,
+      "ok": true,
+      "ms": 1151,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 3
+     },
+     "uptime": {
+      "24h": 99.618,
+      "7d": 99.831,
+      "30d": 99.902,
+      "90d": 99.902
+     },
+     "avg_ms_24h": 1084
     }
    ]
   },
@@ -101,9 +101,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1792999084,
+      "ts": 1792999383,
       "ok": true,
-      "ms": 157,
+      "ms": 146,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -121,9 +121,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1792999084,
+      "ts": 1792999383,
       "ok": true,
-      "ms": 177,
+      "ms": 161,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -141,17 +141,17 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1792999084,
+      "ts": 1792999383,
       "ok": true,
-      "ms": 166,
+      "ms": 158,
       "err": null,
       "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 100.0,
-      "7d": 97.177,
-      "30d": 97.149,
-      "90d": 97.149
+      "7d": 97.233,
+      "30d": 97.15,
+      "90d": 97.15
      },
      "avg_ms_24h": 137
     },
@@ -161,9 +161,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1792999068,
+      "ts": 1792999367,
       "ok": true,
-      "ms": 171,
+      "ms": 156,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -181,9 +181,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1792999068,
+      "ts": 1792999367,
       "ok": true,
-      "ms": 169,
+      "ms": 157,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -201,7 +201,7 @@
  "overall": "up",
  "global_uptime": {
   "24h": 99.83,
-  "7d": 99.611,
+  "7d": 99.617,
   "30d": 99.618,
   "90d": 99.618
  }

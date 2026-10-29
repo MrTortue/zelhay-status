@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T13:00:12+00:00",
+ "generated_at": "2026-10-29T13:05:13+00:00",
  "sla_target": 99.9,
  "confirm_failures": 2,
  "groups": [
@@ -12,9 +12,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1793278813,
+      "ts": 1793279114,
       "ok": true,
-      "ms": 1000,
+      "ms": 1274,
       "err": null,
       "via": "http",
       "tls_days_left": 4
@@ -25,7 +25,7 @@
       "30d": 99.471,
       "90d": 99.471
      },
-     "avg_ms_24h": 922
+     "avg_ms_24h": 924
     },
     {
      "id": "web-web",
@@ -33,30 +33,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1793278813,
+      "ts": 1793279114,
       "ok": true,
-      "ms": 1324,
-      "err": null,
-      "via": "http",
-      "tls_days_left": 3
-     },
-     "uptime": {
-      "24h": 99.654,
-      "7d": 98.727,
-      "30d": 99.471,
-      "90d": 99.471
-     },
-     "avg_ms_24h": 1068
-    },
-    {
-     "id": "web-game",
-     "name": "game.zelhay-host.fr",
-     "type": "http",
-     "status": "up",
-     "last": {
-      "ts": 1793278813,
-      "ok": true,
-      "ms": 1326,
+      "ms": 1263,
       "err": null,
       "via": "http",
       "tls_days_left": 3
@@ -70,14 +49,14 @@
      "avg_ms_24h": 1069
     },
     {
-     "id": "web-console",
-     "name": "console.zelhay-host.fr",
+     "id": "web-game",
+     "name": "game.zelhay-host.fr",
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1793278813,
+      "ts": 1793279114,
       "ok": true,
-      "ms": 1149,
+      "ms": 1238,
       "err": null,
       "via": "http",
       "tls_days_left": 3
@@ -88,7 +67,28 @@
       "30d": 99.471,
       "90d": 99.471
      },
-     "avg_ms_24h": 1067
+     "avg_ms_24h": 1070
+    },
+    {
+     "id": "web-console",
+     "name": "console.zelhay-host.fr",
+     "type": "http",
+     "status": "up",
+     "last": {
+      "ts": 1793279114,
+      "ok": true,
+      "ms": 1039,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 3
+     },
+     "uptime": {
+      "24h": 99.654,
+      "7d": 98.727,
+      "30d": 99.471,
+      "90d": 99.471
+     },
+     "avg_ms_24h": 1066
     }
    ]
   },
@@ -101,17 +101,17 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1793278865,
+      "ts": 1793279166,
       "ok": true,
-      "ms": 143,
+      "ms": 145,
       "err": null,
       "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 100.0,
       "7d": 98.783,
-      "30d": 99.511,
-      "90d": 99.511
+      "30d": 99.512,
+      "90d": 99.512
      },
      "avg_ms_24h": 124
     },
@@ -121,19 +121,19 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1793278865,
+      "ts": 1793279166,
       "ok": true,
-      "ms": 157,
+      "ms": 160,
       "err": null,
       "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 100.0,
       "7d": 98.783,
-      "30d": 99.511,
-      "90d": 99.511
+      "30d": 99.512,
+      "90d": 99.512
      },
-     "avg_ms_24h": 140
+     "avg_ms_24h": 141
     },
     {
      "id": "ip-87-76-211-103",
@@ -141,7 +141,7 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1793278865,
+      "ts": 1793279166,
       "ok": true,
       "ms": 157,
       "err": null,
@@ -161,17 +161,17 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1793278849,
+      "ts": 1793279150,
       "ok": true,
-      "ms": 153,
+      "ms": 152,
       "err": null,
       "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 100.0,
       "7d": 98.783,
-      "30d": 99.511,
-      "90d": 99.511
+      "30d": 99.512,
+      "90d": 99.512
      },
      "avg_ms_24h": 140
     },
@@ -181,17 +181,17 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1793278849,
+      "ts": 1793279150,
       "ok": true,
-      "ms": 157,
+      "ms": 152,
       "err": null,
       "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 100.0,
       "7d": 98.783,
-      "30d": 99.511,
-      "90d": 99.511
+      "30d": 99.512,
+      "90d": 99.512
      },
      "avg_ms_24h": 140
     }
@@ -202,7 +202,7 @@
  "global_uptime": {
   "24h": 99.846,
   "7d": 98.758,
-  "30d": 99.235,
-  "90d": 99.235
+  "30d": 99.236,
+  "90d": 99.236
  }
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02T16:03:01+00:00",
+ "generated_at": "2026-11-02T16:13:05+00:00",
  "sla_target": 99.9,
  "confirm_failures": 2,
  "groups": [
@@ -12,9 +12,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1793635383,
+      "ts": 1793635986,
       "ok": true,
-      "ms": 1134,
+      "ms": 848,
       "err": null,
       "via": "http",
       "tls_days_left": 3
@@ -25,7 +25,7 @@
       "30d": 99.547,
       "90d": 99.547
      },
-     "avg_ms_24h": 871
+     "avg_ms_24h": 872
     },
     {
      "id": "web-web",
@@ -33,30 +33,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1793635383,
+      "ts": 1793635987,
       "ok": true,
-      "ms": 1428,
-      "err": null,
-      "via": "http",
-      "tls_days_left": 6
-     },
-     "uptime": {
-      "24h": 100.0,
-      "7d": 98.729,
-      "30d": 99.547,
-      "90d": 99.547
-     },
-     "avg_ms_24h": 1018
-    },
-    {
-     "id": "web-game",
-     "name": "game.zelhay-host.fr",
-     "type": "http",
-     "status": "up",
-     "last": {
-      "ts": 1793635383,
-      "ok": true,
-      "ms": 1515,
+      "ms": 1217,
       "err": null,
       "via": "http",
       "tls_days_left": 6
@@ -70,14 +49,14 @@
      "avg_ms_24h": 1021
     },
     {
-     "id": "web-console",
-     "name": "console.zelhay-host.fr",
+     "id": "web-game",
+     "name": "game.zelhay-host.fr",
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1793635383,
+      "ts": 1793635987,
       "ok": true,
-      "ms": 1345,
+      "ms": 1162,
       "err": null,
       "via": "http",
       "tls_days_left": 6
@@ -88,7 +67,28 @@
       "30d": 99.547,
       "90d": 99.547
      },
-     "avg_ms_24h": 1022
+     "avg_ms_24h": 1023
+    },
+    {
+     "id": "web-console",
+     "name": "console.zelhay-host.fr",
+     "type": "http",
+     "status": "up",
+     "last": {
+      "ts": 1793635987,
+      "ok": true,
+      "ms": 1226,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 6
+     },
+     "uptime": {
+      "24h": 100.0,
+      "7d": 98.729,
+      "30d": 99.547,
+      "90d": 99.547
+     },
+     "avg_ms_24h": 1025
     }
    ]
   },
@@ -101,15 +101,15 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1793635435,
+      "ts": 1793636038,
       "ok": true,
-      "ms": 140,
+      "ms": 98,
       "err": null,
       "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 100.0,
-      "7d": 98.784,
+      "7d": 98.785,
       "30d": 99.598,
       "90d": 99.598
      },
@@ -121,15 +121,15 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1793635435,
+      "ts": 1793636038,
       "ok": true,
-      "ms": 156,
+      "ms": 110,
       "err": null,
       "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 100.0,
-      "7d": 98.784,
+      "7d": 98.785,
       "30d": 99.598,
       "90d": 99.598
      },
@@ -141,15 +141,15 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1793635435,
+      "ts": 1793636038,
       "ok": true,
-      "ms": 158,
+      "ms": 105,
       "err": null,
       "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 100.0,
-      "7d": 98.784,
+      "7d": 98.785,
       "30d": 97.686,
       "90d": 97.686
      },
@@ -161,15 +161,15 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1793635419,
+      "ts": 1793636022,
       "ok": true,
-      "ms": 156,
+      "ms": 119,
       "err": null,
       "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 100.0,
-      "7d": 98.784,
+      "7d": 98.785,
       "30d": 99.598,
       "90d": 99.598
      },
@@ -181,15 +181,15 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1793635419,
+      "ts": 1793636022,
       "ok": true,
-      "ms": 156,
+      "ms": 105,
       "err": null,
       "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 100.0,
-      "7d": 98.784,
+      "7d": 98.785,
       "30d": 99.598,
       "90d": 99.598
      },

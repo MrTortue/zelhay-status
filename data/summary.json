@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-03T07:09:06+00:00",
+ "generated_at": "2026-11-03T07:14:15+00:00",
  "sla_target": 99.9,
  "confirm_failures": 2,
  "groups": [
@@ -12,9 +12,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1793689748,
+      "ts": 1793690056,
       "ok": true,
-      "ms": 1175,
+      "ms": 622,
       "err": null,
       "via": "http",
       "tls_days_left": 6
@@ -22,10 +22,10 @@
      "uptime": {
       "24h": 100.0,
       "7d": 98.76,
-      "30d": 99.56,
-      "90d": 99.56
+      "30d": 99.561,
+      "90d": 99.561
      },
-     "avg_ms_24h": 869
+     "avg_ms_24h": 868
     },
     {
      "id": "web-web",
@@ -33,9 +33,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1793689748,
+      "ts": 1793690056,
       "ok": true,
-      "ms": 1075,
+      "ms": 687,
       "err": null,
       "via": "http",
       "tls_days_left": 5
@@ -43,10 +43,10 @@
      "uptime": {
       "24h": 100.0,
       "7d": 98.76,
-      "30d": 99.56,
-      "90d": 99.56
+      "30d": 99.561,
+      "90d": 99.561
      },
-     "avg_ms_24h": 1003
+     "avg_ms_24h": 1002
     },
     {
      "id": "web-game",
@@ -54,9 +54,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1793689748,
+      "ts": 1793690056,
       "ok": true,
-      "ms": 1132,
+      "ms": 725,
       "err": null,
       "via": "http",
       "tls_days_left": 5
@@ -64,10 +64,10 @@
      "uptime": {
       "24h": 100.0,
       "7d": 98.76,
-      "30d": 99.56,
-      "90d": 99.56
+      "30d": 99.561,
+      "90d": 99.561
      },
-     "avg_ms_24h": 1027
+     "avg_ms_24h": 1026
     },
     {
      "id": "web-console",
@@ -75,9 +75,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1793689748,
+      "ts": 1793690056,
       "ok": true,
-      "ms": 1160,
+      "ms": 724,
       "err": null,
       "via": "http",
       "tls_days_left": 5
@@ -85,10 +85,10 @@
      "uptime": {
       "24h": 100.0,
       "7d": 98.76,
-      "30d": 99.56,
-      "90d": 99.56
+      "30d": 99.561,
+      "90d": 99.561
      },
-     "avg_ms_24h": 1004
+     "avg_ms_24h": 1003
     }
    ]
   },
@@ -101,11 +101,11 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1793689799,
+      "ts": 1793690055,
       "ok": true,
-      "ms": 149,
+      "ms": 91,
       "err": null,
-      "via": "ping→tcp_any"
+      "via": "ping"
      },
      "uptime": {
       "24h": 100.0,
@@ -121,11 +121,11 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1793689799,
+      "ts": 1793690055,
       "ok": true,
-      "ms": 170,
+      "ms": 108,
       "err": null,
-      "via": "ping→tcp_any"
+      "via": "ping"
      },
      "uptime": {
       "24h": 100.0,
@@ -133,7 +133,7 @@
       "30d": 99.609,
       "90d": 99.609
      },
-     "avg_ms_24h": 143
+     "avg_ms_24h": 142
     },
     {
      "id": "ip-87-76-211-103",
@@ -141,11 +141,11 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1793689799,
+      "ts": 1793690055,
       "ok": true,
-      "ms": 170,
+      "ms": 108,
       "err": null,
-      "via": "ping→tcp_any"
+      "via": "ping"
      },
      "uptime": {
       "24h": 100.0,
@@ -161,11 +161,11 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1793689783,
+      "ts": 1793690055,
       "ok": true,
-      "ms": 173,
+      "ms": 108,
       "err": null,
-      "via": "ping→tcp_any"
+      "via": "ping"
      },
      "uptime": {
       "24h": 100.0,
@@ -173,7 +173,7 @@
       "30d": 99.609,
       "90d": 99.609
      },
-     "avg_ms_24h": 143
+     "avg_ms_24h": 142
     },
     {
      "id": "ip-87-76-211-106",
@@ -181,11 +181,11 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1793689783,
+      "ts": 1793690055,
       "ok": true,
-      "ms": 175,
+      "ms": 105,
       "err": null,
-      "via": "ping→tcp_any"
+      "via": "ping"
      },
      "uptime": {
       "24h": 100.0,
@@ -202,7 +202,7 @@
  "global_uptime": {
   "24h": 100.0,
   "7d": 98.79,
-  "30d": 99.381,
-  "90d": 99.381
+  "30d": 99.382,
+  "90d": 99.382
  }
 }

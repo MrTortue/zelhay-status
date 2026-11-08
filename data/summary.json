@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T05:52:38+00:00",
+ "generated_at": "2026-11-08T13:13:49+00:00",
  "sla_target": 99.9,
  "confirm_failures": 2,
  "groups": [
@@ -12,20 +12,20 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794117160,
+      "ts": 1794143631,
       "ok": true,
-      "ms": 992,
+      "ms": 1130,
       "err": null,
       "via": "http",
       "tls_days_left": 4
      },
      "uptime": {
-      "24h": 99.654,
-      "7d": 99.942,
+      "24h": 100.0,
+      "7d": 99.941,
       "30d": 99.619,
       "90d": 99.619
      },
-     "avg_ms_24h": 888
+     "avg_ms_24h": 889
     },
     {
      "id": "web-web",
@@ -33,12 +33,12 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794117160,
+      "ts": 1794143631,
       "ok": true,
-      "ms": 1106,
+      "ms": 1248,
       "err": null,
       "via": "http",
-      "tls_days_left": 4
+      "tls_days_left": 3
      },
      "uptime": {
       "24h": 100.0,
@@ -54,9 +54,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794117160,
+      "ts": 1794143631,
       "ok": true,
-      "ms": 1106,
+      "ms": 1191,
       "err": null,
       "via": "http",
       "tls_days_left": 4
@@ -67,7 +67,7 @@
       "30d": 99.633,
       "90d": 99.633
      },
-     "avg_ms_24h": 1051
+     "avg_ms_24h": 1049
     },
     {
      "id": "web-console",
@@ -75,9 +75,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794117160,
+      "ts": 1794143631,
       "ok": true,
-      "ms": 1085,
+      "ms": 1258,
       "err": null,
       "via": "http",
       "tls_days_left": 4
@@ -101,9 +101,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794117211,
+      "ts": 1794143682,
       "ok": true,
-      "ms": 158,
+      "ms": 102,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -121,9 +121,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794117212,
+      "ts": 1794143682,
       "ok": true,
-      "ms": 174,
+      "ms": 122,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -133,7 +133,7 @@
       "30d": 99.673,
       "90d": 99.673
      },
-     "avg_ms_24h": 142
+     "avg_ms_24h": 143
     },
     {
      "id": "ip-87-76-211-103",
@@ -141,9 +141,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794117212,
+      "ts": 1794143682,
       "ok": true,
-      "ms": 166,
+      "ms": 123,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -161,9 +161,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794117195,
+      "ts": 1794143666,
       "ok": true,
-      "ms": 166,
+      "ms": 125,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -173,7 +173,7 @@
       "30d": 99.673,
       "90d": 99.673
      },
-     "avg_ms_24h": 143
+     "avg_ms_24h": 144
     },
     {
      "id": "ip-87-76-211-106",
@@ -181,9 +181,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794117195,
+      "ts": 1794143666,
       "ok": true,
-      "ms": 173,
+      "ms": 125,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -193,15 +193,15 @@
       "30d": 99.673,
       "90d": 99.673
      },
-     "avg_ms_24h": 143
+     "avg_ms_24h": 144
     }
    ]
   }
  ],
  "overall": "up",
  "global_uptime": {
-  "24h": 99.962,
-  "7d": 99.994,
+  "24h": 100.0,
+  "7d": 99.993,
   "30d": 99.481,
   "90d": 99.481
  }

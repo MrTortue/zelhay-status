@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T23:25:53+00:00",
+ "generated_at": "2026-11-08T23:30:55+00:00",
  "sla_target": 99.9,
  "confirm_failures": 2,
  "groups": [
@@ -12,9 +12,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794180354,
+      "ts": 1794180656,
       "ok": true,
-      "ms": 731,
+      "ms": 840,
       "err": null,
       "via": "http",
       "tls_days_left": 3
@@ -25,7 +25,7 @@
       "30d": 99.625,
       "90d": 99.625
      },
-     "avg_ms_24h": 919
+     "avg_ms_24h": 918
     },
     {
      "id": "web-web",
@@ -33,49 +33,7 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794180354,
-      "ok": true,
-      "ms": 855,
-      "err": null,
-      "via": "http",
-      "tls_days_left": 3
-     },
-     "uptime": {
-      "24h": 100.0,
-      "7d": 100.0,
-      "30d": 99.639,
-      "90d": 99.639
-     },
-     "avg_ms_24h": 1038
-    },
-    {
-     "id": "web-game",
-     "name": "game.zelhay-host.fr",
-     "type": "http",
-     "status": "up",
-     "last": {
-      "ts": 1794180354,
-      "ok": true,
-      "ms": 820,
-      "err": null,
-      "via": "http",
-      "tls_days_left": 3
-     },
-     "uptime": {
-      "24h": 100.0,
-      "7d": 100.0,
-      "30d": 99.639,
-      "90d": 99.639
-     },
-     "avg_ms_24h": 1067
-    },
-    {
-     "id": "web-console",
-     "name": "console.zelhay-host.fr",
-     "type": "http",
-     "status": "up",
-     "last": {
-      "ts": 1794180354,
+      "ts": 1794180656,
       "ok": true,
       "ms": 836,
       "err": null,
@@ -88,7 +46,49 @@
       "30d": 99.639,
       "90d": 99.639
      },
-     "avg_ms_24h": 1051
+     "avg_ms_24h": 1037
+    },
+    {
+     "id": "web-game",
+     "name": "game.zelhay-host.fr",
+     "type": "http",
+     "status": "up",
+     "last": {
+      "ts": 1794180656,
+      "ok": true,
+      "ms": 839,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 3
+     },
+     "uptime": {
+      "24h": 100.0,
+      "7d": 100.0,
+      "30d": 99.639,
+      "90d": 99.639
+     },
+     "avg_ms_24h": 1056
+    },
+    {
+     "id": "web-console",
+     "name": "console.zelhay-host.fr",
+     "type": "http",
+     "status": "up",
+     "last": {
+      "ts": 1794180656,
+      "ok": true,
+      "ms": 846,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 3
+     },
+     "uptime": {
+      "24h": 100.0,
+      "7d": 100.0,
+      "30d": 99.639,
+      "90d": 99.639
+     },
+     "avg_ms_24h": 1050
     }
    ]
   },
@@ -101,9 +101,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794180406,
+      "ts": 1794180708,
       "ok": true,
-      "ms": 122,
+      "ms": 118,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -121,9 +121,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794180406,
+      "ts": 1794180708,
       "ok": true,
-      "ms": 143,
+      "ms": 164,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -141,9 +141,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794180406,
+      "ts": 1794180708,
       "ok": true,
-      "ms": 132,
+      "ms": 166,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -161,9 +161,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794180390,
+      "ts": 1794180692,
       "ok": true,
-      "ms": 143,
+      "ms": 149,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -173,7 +173,7 @@
       "30d": 99.679,
       "90d": 99.679
      },
-     "avg_ms_24h": 144
+     "avg_ms_24h": 145
     },
     {
      "id": "ip-87-76-211-106",
@@ -181,9 +181,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794180390,
+      "ts": 1794180692,
       "ok": true,
-      "ms": 139,
+      "ms": 141,
       "err": null,
       "via": "ping→tcp_any"
      },

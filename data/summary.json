@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T16:26:28+00:00",
+ "generated_at": "2026-11-15T16:31:29+00:00",
  "sla_target": 99.9,
  "confirm_failures": 2,
  "groups": [
@@ -12,9 +12,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794759989,
+      "ts": 1794760290,
       "ok": true,
-      "ms": 861,
+      "ms": 696,
       "err": null,
       "via": "http",
       "tls_days_left": 3
@@ -25,7 +25,7 @@
       "30d": 99.637,
       "90d": 99.699
      },
-     "avg_ms_24h": 865
+     "avg_ms_24h": 864
     },
     {
      "id": "web-web",
@@ -33,9 +33,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794759989,
+      "ts": 1794760290,
       "ok": true,
-      "ms": 1140,
+      "ms": 945,
       "err": null,
       "via": "http",
       "tls_days_left": 3
@@ -54,9 +54,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794759989,
+      "ts": 1794760290,
       "ok": true,
-      "ms": 937,
+      "ms": 821,
       "err": null,
       "via": "http",
       "tls_days_left": 3
@@ -67,7 +67,7 @@
       "30d": 99.65,
       "90d": 99.71
      },
-     "avg_ms_24h": 968
+     "avg_ms_24h": 967
     },
     {
      "id": "web-console",
@@ -75,9 +75,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794759989,
+      "ts": 1794760290,
       "ok": true,
-      "ms": 920,
+      "ms": 806,
       "err": null,
       "via": "http",
       "tls_days_left": 3
@@ -101,9 +101,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794760041,
+      "ts": 1794760342,
       "ok": true,
-      "ms": 154,
+      "ms": 120,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -121,9 +121,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794760041,
+      "ts": 1794760342,
       "ok": true,
-      "ms": 166,
+      "ms": 134,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -141,9 +141,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794760041,
+      "ts": 1794760342,
       "ok": true,
-      "ms": 177,
+      "ms": 128,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -161,9 +161,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794760025,
+      "ts": 1794760326,
       "ok": true,
-      "ms": 169,
+      "ms": 130,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -181,9 +181,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794760025,
+      "ts": 1794760326,
       "ok": true,
-      "ms": 172,
+      "ms": 138,
       "err": null,
       "via": "ping→tcp_any"
      },

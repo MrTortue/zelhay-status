@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T05:35:08+00:00",
+ "generated_at": "2026-11-15T05:40:11+00:00",
  "sla_target": 99.9,
  "confirm_failures": 2,
  "groups": [
@@ -12,9 +12,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794720909,
+      "ts": 1794721212,
       "ok": true,
-      "ms": 706,
+      "ms": 781,
       "err": null,
       "via": "http",
       "tls_days_left": 4
@@ -33,9 +33,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794720910,
+      "ts": 1794721212,
       "ok": true,
-      "ms": 845,
+      "ms": 961,
       "err": null,
       "via": "http",
       "tls_days_left": 3
@@ -46,7 +46,7 @@
       "30d": 99.65,
       "90d": 99.706
      },
-     "avg_ms_24h": 973
+     "avg_ms_24h": 972
     },
     {
      "id": "web-game",
@@ -54,9 +54,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794720910,
+      "ts": 1794721212,
       "ok": true,
-      "ms": 839,
+      "ms": 973,
       "err": null,
       "via": "http",
       "tls_days_left": 4
@@ -75,9 +75,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794720910,
+      "ts": 1794721212,
       "ok": true,
-      "ms": 866,
+      "ms": 977,
       "err": null,
       "via": "http",
       "tls_days_left": 4
@@ -101,9 +101,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794720961,
+      "ts": 1794721264,
       "ok": true,
-      "ms": 120,
+      "ms": 133,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -121,9 +121,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794720961,
+      "ts": 1794721264,
       "ok": true,
-      "ms": 133,
+      "ms": 150,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -141,9 +141,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794720961,
+      "ts": 1794721264,
       "ok": true,
-      "ms": 132,
+      "ms": 153,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -161,7 +161,7 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794720945,
+      "ts": 1794721248,
       "ok": true,
       "ms": 150,
       "err": null,
@@ -181,9 +181,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794720945,
+      "ts": 1794721248,
       "ok": true,
-      "ms": 132,
+      "ms": 150,
       "err": null,
       "via": "ping→tcp_any"
      },

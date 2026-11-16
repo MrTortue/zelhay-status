@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T01:50:22+00:00",
+ "generated_at": "2026-11-16T01:55:34+00:00",
  "sla_target": 99.9,
  "confirm_failures": 2,
  "groups": [
@@ -12,9 +12,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794793870,
+      "ts": 1794794136,
       "ok": true,
-      "ms": 10549,
+      "ms": 913,
       "err": null,
       "via": "http",
       "tls_days_left": 3
@@ -31,13 +31,14 @@
      "id": "web-web",
      "name": "web.zelhay-host.fr",
      "type": "http",
-     "status": "degraded",
+     "status": "up",
      "last": {
-      "ts": 1794793873,
-      "ok": false,
-      "ms": null,
-      "err": "URLError: <urlopen error _ssl.c:994: The handshake operation timed out>",
-      "via": "http"
+      "ts": 1794794136,
+      "ok": true,
+      "ms": 971,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 6
      },
      "uptime": {
       "24h": 99.655,
@@ -51,13 +52,14 @@
      "id": "web-game",
      "name": "game.zelhay-host.fr",
      "type": "http",
-     "status": "degraded",
+     "status": "up",
      "last": {
-      "ts": 1794793866,
-      "ok": false,
-      "ms": null,
-      "err": "URLError: <urlopen error timed out>",
-      "via": "http"
+      "ts": 1794794136,
+      "ok": true,
+      "ms": 981,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 6
      },
      "uptime": {
       "24h": 99.655,
@@ -65,19 +67,20 @@
       "30d": 99.65,
       "90d": 99.703
      },
-     "avg_ms_24h": 978
+     "avg_ms_24h": 979
     },
     {
      "id": "web-console",
      "name": "console.zelhay-host.fr",
      "type": "http",
-     "status": "degraded",
+     "status": "up",
      "last": {
-      "ts": 1794793865,
-      "ok": false,
-      "ms": null,
-      "err": "URLError: <urlopen error timed out>",
-      "via": "http"
+      "ts": 1794794136,
+      "ok": true,
+      "ms": 991,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 6
      },
      "uptime": {
       "24h": 99.655,
@@ -98,11 +101,11 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794793876,
+      "ts": 1794794134,
       "ok": true,
-      "ms": 116,
+      "ms": 139,
       "err": null,
-      "via": "ping→tcp_any"
+      "via": "ping"
      },
      "uptime": {
       "24h": 100.0,
@@ -118,11 +121,11 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794793876,
+      "ts": 1794794134,
       "ok": true,
-      "ms": 132,
+      "ms": 152,
       "err": null,
-      "via": "ping→tcp_any"
+      "via": "ping"
      },
      "uptime": {
       "24h": 100.0,
@@ -138,11 +141,11 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794793876,
+      "ts": 1794794134,
       "ok": true,
-      "ms": 132,
+      "ms": 151,
       "err": null,
-      "via": "ping→tcp_any"
+      "via": "ping"
      },
      "uptime": {
       "24h": 100.0,
@@ -158,11 +161,11 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794793863,
+      "ts": 1794794134,
       "ok": true,
-      "ms": 3223,
+      "ms": 151,
       "err": null,
-      "via": "ping→tcp_any"
+      "via": "ping"
      },
      "uptime": {
       "24h": 100.0,
@@ -170,7 +173,7 @@
       "30d": 99.715,
       "90d": 99.745
      },
-     "avg_ms_24h": 152
+     "avg_ms_24h": 153
     },
     {
      "id": "ip-87-76-211-106",
@@ -178,11 +181,11 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794793867,
+      "ts": 1794794134,
       "ok": true,
-      "ms": 7336,
+      "ms": 151,
       "err": null,
-      "via": "ping→tcp_any"
+      "via": "ping"
      },
      "uptime": {
       "24h": 100.0,
@@ -195,7 +198,7 @@
    ]
   }
  ],
- "overall": "degraded",
+ "overall": "up",
  "global_uptime": {
   "24h": 99.885,
   "7d": 99.983,

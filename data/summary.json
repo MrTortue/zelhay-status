@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T16:07:55+00:00",
+ "generated_at": "2026-11-17T16:13:08+00:00",
  "sla_target": 99.9,
  "confirm_failures": 2,
  "groups": [
@@ -10,16 +10,17 @@
      "id": "web-site",
      "name": "zelhay-host.fr",
      "type": "http",
-     "status": "degraded",
+     "status": "up",
      "last": {
-      "ts": 1794931713,
-      "ok": false,
-      "ms": null,
-      "err": "TimeoutError: The read operation timed out",
-      "via": "http"
+      "ts": 1794931990,
+      "ok": true,
+      "ms": 1016,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 5
      },
      "uptime": {
-      "24h": 99.231,
+      "24h": 99.234,
       "7d": 99.894,
       "30d": 99.623,
       "90d": 99.694
@@ -32,18 +33,18 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794931679,
+      "ts": 1794931990,
       "ok": true,
-      "ms": 4115,
+      "ms": 1180,
       "err": null,
       "via": "http",
       "tls_days_left": 4
      },
      "uptime": {
-      "24h": 99.615,
+      "24h": 99.617,
       "7d": 99.894,
       "30d": 99.636,
-      "90d": 99.704
+      "90d": 99.705
      },
      "avg_ms_24h": 1021
     },
@@ -51,36 +52,38 @@
      "id": "web-game",
      "name": "game.zelhay-host.fr",
      "type": "http",
-     "status": "degraded",
+     "status": "up",
      "last": {
-      "ts": 1794931713,
-      "ok": false,
-      "ms": null,
-      "err": "TimeoutError: The read operation timed out",
-      "via": "http"
+      "ts": 1794931990,
+      "ok": true,
+      "ms": 1180,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 5
      },
      "uptime": {
-      "24h": 99.231,
+      "24h": 99.234,
       "7d": 99.841,
       "30d": 99.623,
       "90d": 99.694
      },
-     "avg_ms_24h": 1016
+     "avg_ms_24h": 1017
     },
     {
      "id": "web-console",
      "name": "console.zelhay-host.fr",
      "type": "http",
-     "status": "degraded",
+     "status": "up",
      "last": {
-      "ts": 1794931713,
-      "ok": false,
-      "ms": null,
-      "err": "TimeoutError: The read operation timed out",
-      "via": "http"
+      "ts": 1794931990,
+      "ok": true,
+      "ms": 1016,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 5
      },
      "uptime": {
-      "24h": 99.231,
+      "24h": 99.234,
       "7d": 99.841,
       "30d": 99.623,
       "90d": 99.694
@@ -98,14 +101,14 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794931728,
+      "ts": 1794931988,
       "ok": true,
-      "ms": 134,
+      "ms": 139,
       "err": null,
-      "via": "ping→tcp_any"
+      "via": "ping"
      },
      "uptime": {
-      "24h": 99.615,
+      "24h": 99.617,
       "7d": 99.947,
       "30d": 99.701,
       "90d": 99.745
@@ -118,14 +121,14 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794931728,
+      "ts": 1794931988,
       "ok": true,
-      "ms": 157,
+      "ms": 154,
       "err": null,
-      "via": "ping→tcp_any"
+      "via": "ping"
      },
      "uptime": {
-      "24h": 99.615,
+      "24h": 99.617,
       "7d": 99.947,
       "30d": 99.701,
       "90d": 99.745
@@ -138,14 +141,14 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794931728,
+      "ts": 1794931988,
       "ok": true,
-      "ms": 151,
+      "ms": 155,
       "err": null,
-      "via": "ping→tcp_any"
+      "via": "ping"
      },
      "uptime": {
-      "24h": 99.615,
+      "24h": 99.617,
       "7d": 99.947,
       "30d": 98.221,
       "90d": 98.584
@@ -158,14 +161,14 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794931712,
+      "ts": 1794931988,
       "ok": true,
-      "ms": 150,
+      "ms": 146,
       "err": null,
-      "via": "ping→tcp_any"
+      "via": "ping"
      },
      "uptime": {
-      "24h": 99.615,
+      "24h": 99.617,
       "7d": 99.947,
       "30d": 99.701,
       "90d": 99.745
@@ -178,14 +181,14 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794931712,
+      "ts": 1794931988,
       "ok": true,
       "ms": 149,
       "err": null,
-      "via": "ping→tcp_any"
+      "via": "ping"
      },
      "uptime": {
-      "24h": 99.615,
+      "24h": 99.617,
       "7d": 99.947,
       "30d": 99.701,
       "90d": 99.745
@@ -195,11 +198,11 @@
    ]
   }
  ],
- "overall": "degraded",
+ "overall": "up",
  "global_uptime": {
-  "24h": 99.487,
+  "24h": 99.489,
   "7d": 99.912,
   "30d": 99.503,
-  "90d": 99.594
+  "90d": 99.595
  }
 }

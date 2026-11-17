@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T19:34:47+00:00",
+ "generated_at": "2026-11-17T19:39:41+00:00",
  "sla_target": 99.9,
  "confirm_failures": 2,
  "groups": [
@@ -12,15 +12,15 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794944088,
+      "ts": 1794944382,
       "ok": true,
-      "ms": 719,
+      "ms": 782,
       "err": null,
       "via": "http",
-      "tls_days_left": 5
+      "tls_days_left": 4
      },
      "uptime": {
-      "24h": 99.306,
+      "24h": 99.308,
       "7d": 99.894,
       "30d": 99.623,
       "90d": 99.696
@@ -33,20 +33,20 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794944088,
+      "ts": 1794944382,
       "ok": true,
-      "ms": 957,
+      "ms": 802,
       "err": null,
       "via": "http",
       "tls_days_left": 4
      },
      "uptime": {
-      "24h": 99.653,
+      "24h": 99.654,
       "7d": 99.894,
       "30d": 99.636,
       "90d": 99.706
      },
-     "avg_ms_24h": 1024
+     "avg_ms_24h": 1023
     },
     {
      "id": "web-game",
@@ -54,20 +54,20 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794944088,
+      "ts": 1794944382,
       "ok": true,
-      "ms": 893,
+      "ms": 801,
       "err": null,
       "via": "http",
       "tls_days_left": 4
      },
      "uptime": {
-      "24h": 98.264,
+      "24h": 98.27,
       "7d": 99.682,
       "30d": 99.584,
       "90d": 99.665
      },
-     "avg_ms_24h": 1020
+     "avg_ms_24h": 1019
     },
     {
      "id": "web-console",
@@ -75,20 +75,20 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794944088,
+      "ts": 1794944382,
       "ok": true,
-      "ms": 980,
+      "ms": 941,
       "err": null,
       "via": "http",
       "tls_days_left": 4
      },
      "uptime": {
-      "24h": 99.306,
+      "24h": 99.308,
       "7d": 99.841,
       "30d": 99.623,
       "90d": 99.696
      },
-     "avg_ms_24h": 1027
+     "avg_ms_24h": 1026
     }
    ]
   },
@@ -101,14 +101,14 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794944087,
+      "ts": 1794944434,
       "ok": true,
-      "ms": 89,
+      "ms": 101,
       "err": null,
-      "via": "ping"
+      "via": "ping→tcp_any"
      },
      "uptime": {
-      "24h": 99.653,
+      "24h": 99.654,
       "7d": 99.947,
       "30d": 99.701,
       "90d": 99.746
@@ -121,14 +121,14 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794944087,
+      "ts": 1794944434,
       "ok": true,
-      "ms": 112,
+      "ms": 119,
       "err": null,
-      "via": "ping"
+      "via": "ping→tcp_any"
      },
      "uptime": {
-      "24h": 99.653,
+      "24h": 99.654,
       "7d": 99.947,
       "30d": 99.701,
       "90d": 99.746
@@ -141,14 +141,14 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794944087,
+      "ts": 1794944434,
       "ok": true,
-      "ms": 112,
+      "ms": 124,
       "err": null,
-      "via": "ping"
+      "via": "ping→tcp_any"
      },
      "uptime": {
-      "24h": 99.653,
+      "24h": 99.654,
       "7d": 99.947,
       "30d": 98.22,
       "90d": 98.59
@@ -161,14 +161,14 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794944087,
+      "ts": 1794944418,
       "ok": true,
-      "ms": 111,
+      "ms": 122,
       "err": null,
-      "via": "ping"
+      "via": "ping→tcp_any"
      },
      "uptime": {
-      "24h": 99.653,
+      "24h": 99.654,
       "7d": 99.947,
       "30d": 99.701,
       "90d": 99.746
@@ -181,14 +181,14 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794944087,
+      "ts": 1794944418,
       "ok": true,
-      "ms": 111,
+      "ms": 126,
       "err": null,
-      "via": "ping"
+      "via": "ping→tcp_any"
      },
      "uptime": {
-      "24h": 99.653,
+      "24h": 99.654,
       "7d": 99.947,
       "30d": 99.701,
       "90d": 99.746
@@ -200,7 +200,7 @@
  ],
  "overall": "up",
  "global_uptime": {
-  "24h": 99.422,
+  "24h": 99.423,
   "7d": 99.894,
   "30d": 99.499,
   "90d": 99.593

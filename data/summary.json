@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T19:39:41+00:00",
+ "generated_at": "2026-11-17T19:44:45+00:00",
  "sla_target": 99.9,
  "confirm_failures": 2,
  "groups": [
@@ -12,15 +12,15 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794944382,
+      "ts": 1794944686,
       "ok": true,
-      "ms": 782,
+      "ms": 1000,
       "err": null,
       "via": "http",
       "tls_days_left": 4
      },
      "uptime": {
-      "24h": 99.308,
+      "24h": 99.31,
       "7d": 99.894,
       "30d": 99.623,
       "90d": 99.696
@@ -33,39 +33,39 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794944382,
+      "ts": 1794944686,
       "ok": true,
-      "ms": 802,
+      "ms": 1165,
       "err": null,
       "via": "http",
       "tls_days_left": 4
      },
      "uptime": {
-      "24h": 99.654,
+      "24h": 99.655,
       "7d": 99.894,
       "30d": 99.636,
       "90d": 99.706
      },
-     "avg_ms_24h": 1023
+     "avg_ms_24h": 1024
     },
     {
      "id": "web-game",
      "name": "game.zelhay-host.fr",
      "type": "http",
-     "status": "up",
+     "status": "degraded",
      "last": {
-      "ts": 1794944382,
-      "ok": true,
-      "ms": 801,
-      "err": null,
+      "ts": 1794944702,
+      "ok": false,
+      "ms": 869,
+      "err": "HTTP 502",
       "via": "http",
       "tls_days_left": 4
      },
      "uptime": {
-      "24h": 98.27,
-      "7d": 99.682,
-      "30d": 99.584,
-      "90d": 99.665
+      "24h": 97.931,
+      "7d": 99.628,
+      "30d": 99.571,
+      "90d": 99.655
      },
      "avg_ms_24h": 1019
     },
@@ -75,20 +75,20 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794944382,
+      "ts": 1794944686,
       "ok": true,
-      "ms": 941,
+      "ms": 1212,
       "err": null,
       "via": "http",
       "tls_days_left": 4
      },
      "uptime": {
-      "24h": 99.308,
+      "24h": 99.31,
       "7d": 99.841,
       "30d": 99.623,
       "90d": 99.696
      },
-     "avg_ms_24h": 1026
+     "avg_ms_24h": 1027
     }
    ]
   },
@@ -101,14 +101,14 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794944434,
+      "ts": 1794944738,
       "ok": true,
-      "ms": 101,
+      "ms": 149,
       "err": null,
       "via": "ping→tcp_any"
      },
      "uptime": {
-      "24h": 99.654,
+      "24h": 99.655,
       "7d": 99.947,
       "30d": 99.701,
       "90d": 99.746
@@ -121,14 +121,14 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794944434,
+      "ts": 1794944738,
       "ok": true,
-      "ms": 119,
+      "ms": 165,
       "err": null,
       "via": "ping→tcp_any"
      },
      "uptime": {
-      "24h": 99.654,
+      "24h": 99.655,
       "7d": 99.947,
       "30d": 99.701,
       "90d": 99.746
@@ -141,14 +141,14 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794944434,
+      "ts": 1794944738,
       "ok": true,
-      "ms": 124,
+      "ms": 162,
       "err": null,
       "via": "ping→tcp_any"
      },
      "uptime": {
-      "24h": 99.654,
+      "24h": 99.655,
       "7d": 99.947,
       "30d": 98.22,
       "90d": 98.59
@@ -161,14 +161,14 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794944418,
+      "ts": 1794944722,
       "ok": true,
-      "ms": 122,
+      "ms": 166,
       "err": null,
       "via": "ping→tcp_any"
      },
      "uptime": {
-      "24h": 99.654,
+      "24h": 99.655,
       "7d": 99.947,
       "30d": 99.701,
       "90d": 99.746
@@ -181,14 +181,14 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794944418,
+      "ts": 1794944722,
       "ok": true,
-      "ms": 126,
+      "ms": 170,
       "err": null,
       "via": "ping→tcp_any"
      },
      "uptime": {
-      "24h": 99.654,
+      "24h": 99.655,
       "7d": 99.947,
       "30d": 99.701,
       "90d": 99.746
@@ -198,11 +198,11 @@
    ]
   }
  ],
- "overall": "up",
+ "overall": "degraded",
  "global_uptime": {
-  "24h": 99.423,
-  "7d": 99.894,
-  "30d": 99.499,
-  "90d": 99.593
+  "24h": 99.387,
+  "7d": 99.888,
+  "30d": 99.497,
+  "90d": 99.592
  }
 }

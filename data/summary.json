@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T17:28:27+00:00",
+ "generated_at": "2026-11-17T17:33:39+00:00",
  "sla_target": 99.9,
  "confirm_failures": 2,
  "groups": [
@@ -12,20 +12,20 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794936509,
+      "ts": 1794936820,
       "ok": true,
-      "ms": 1025,
+      "ms": 700,
       "err": null,
       "via": "http",
       "tls_days_left": 5
      },
      "uptime": {
-      "24h": 99.248,
+      "24h": 99.251,
       "7d": 99.894,
       "30d": 99.623,
       "90d": 99.695
      },
-     "avg_ms_24h": 937
+     "avg_ms_24h": 936
     },
     {
      "id": "web-web",
@@ -33,15 +33,15 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794936509,
+      "ts": 1794936820,
       "ok": true,
-      "ms": 1028,
+      "ms": 933,
       "err": null,
       "via": "http",
       "tls_days_left": 4
      },
      "uptime": {
-      "24h": 99.624,
+      "24h": 99.625,
       "7d": 99.894,
       "30d": 99.636,
       "90d": 99.705
@@ -54,20 +54,20 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794936509,
+      "ts": 1794936820,
       "ok": true,
-      "ms": 1032,
+      "ms": 939,
       "err": null,
       "via": "http",
       "tls_days_left": 4
      },
      "uptime": {
-      "24h": 99.248,
+      "24h": 99.251,
       "7d": 99.841,
       "30d": 99.623,
       "90d": 99.695
      },
-     "avg_ms_24h": 1019
+     "avg_ms_24h": 1018
     },
     {
      "id": "web-console",
@@ -75,20 +75,20 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1794936509,
+      "ts": 1794936820,
       "ok": true,
-      "ms": 1146,
+      "ms": 845,
       "err": null,
       "via": "http",
       "tls_days_left": 4
      },
      "uptime": {
-      "24h": 99.248,
+      "24h": 99.251,
       "7d": 99.841,
       "30d": 99.623,
       "90d": 99.695
      },
-     "avg_ms_24h": 1020
+     "avg_ms_24h": 1019
     }
    ]
   },
@@ -101,19 +101,19 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794936560,
+      "ts": 1794936819,
       "ok": true,
-      "ms": 157,
+      "ms": 89,
       "err": null,
-      "via": "ping→tcp_any"
+      "via": "ping"
      },
      "uptime": {
-      "24h": 99.624,
+      "24h": 99.625,
       "7d": 99.947,
       "30d": 99.701,
       "90d": 99.746
      },
-     "avg_ms_24h": 151
+     "avg_ms_24h": 150
     },
     {
      "id": "ip-87-76-211-101",
@@ -121,19 +121,19 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794936560,
+      "ts": 1794936819,
       "ok": true,
-      "ms": 161,
+      "ms": 104,
       "err": null,
-      "via": "ping→tcp_any"
+      "via": "ping"
      },
      "uptime": {
-      "24h": 99.624,
+      "24h": 99.625,
       "7d": 99.947,
       "30d": 99.701,
       "90d": 99.746
      },
-     "avg_ms_24h": 167
+     "avg_ms_24h": 166
     },
     {
      "id": "ip-87-76-211-103",
@@ -141,14 +141,14 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794936560,
+      "ts": 1794936819,
       "ok": true,
-      "ms": 175,
+      "ms": 103,
       "err": null,
-      "via": "ping→tcp_any"
+      "via": "ping"
      },
      "uptime": {
-      "24h": 99.624,
+      "24h": 99.625,
       "7d": 99.947,
       "30d": 98.22,
       "90d": 98.586
@@ -161,14 +161,14 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794936544,
+      "ts": 1794936819,
       "ok": true,
-      "ms": 162,
+      "ms": 102,
       "err": null,
-      "via": "ping→tcp_any"
+      "via": "ping"
      },
      "uptime": {
-      "24h": 99.624,
+      "24h": 99.625,
       "7d": 99.947,
       "30d": 99.701,
       "90d": 99.746
@@ -181,14 +181,14 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1794936544,
+      "ts": 1794936819,
       "ok": true,
-      "ms": 167,
+      "ms": 102,
       "err": null,
-      "via": "ping→tcp_any"
+      "via": "ping"
      },
      "uptime": {
-      "24h": 99.624,
+      "24h": 99.625,
       "7d": 99.947,
       "30d": 99.701,
       "90d": 99.746
@@ -200,7 +200,7 @@
  ],
  "overall": "up",
  "global_uptime": {
-  "24h": 99.499,
+  "24h": 99.5,
   "7d": 99.912,
   "30d": 99.503,
   "90d": 99.596

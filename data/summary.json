@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T14:30:07+00:00",
+ "generated_at": "2026-11-18T14:35:10+00:00",
  "sla_target": 99.9,
  "confirm_failures": 2,
  "groups": [
@@ -10,13 +10,14 @@
      "id": "web-site",
      "name": "zelhay-host.fr",
      "type": "http",
-     "status": "down",
+     "status": "up",
      "last": {
-      "ts": 1795012244,
-      "ok": false,
-      "ms": null,
-      "err": "URLError: <urlopen error timed out>",
-      "via": "http"
+      "ts": 1795012512,
+      "ok": true,
+      "ms": 843,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 4
      },
      "uptime": {
       "24h": 98.264,
@@ -24,19 +25,20 @@
       "30d": 99.571,
       "90d": 99.663
      },
-     "avg_ms_24h": 912
+     "avg_ms_24h": 913
     },
     {
      "id": "web-web",
      "name": "web.zelhay-host.fr",
      "type": "http",
-     "status": "down",
+     "status": "up",
      "last": {
-      "ts": 1795012244,
-      "ok": false,
-      "ms": null,
-      "err": "URLError: <urlopen error timed out>",
-      "via": "http"
+      "ts": 1795012512,
+      "ok": true,
+      "ms": 919,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 3
      },
      "uptime": {
       "24h": 98.611,
@@ -44,19 +46,20 @@
       "30d": 99.584,
       "90d": 99.673
      },
-     "avg_ms_24h": 1041
+     "avg_ms_24h": 1040
     },
     {
      "id": "web-game",
      "name": "game.zelhay-host.fr",
      "type": "http",
-     "status": "down",
+     "status": "up",
      "last": {
-      "ts": 1795012244,
-      "ok": false,
-      "ms": null,
-      "err": "URLError: <urlopen error timed out>",
-      "via": "http"
+      "ts": 1795012512,
+      "ok": true,
+      "ms": 986,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 4
      },
      "uptime": {
       "24h": 94.097,
@@ -64,19 +67,20 @@
       "30d": 99.415,
       "90d": 99.544
      },
-     "avg_ms_24h": 1041
+     "avg_ms_24h": 1040
     },
     {
      "id": "web-console",
      "name": "console.zelhay-host.fr",
      "type": "http",
-     "status": "down",
+     "status": "up",
      "last": {
-      "ts": 1795012244,
-      "ok": false,
-      "ms": null,
-      "err": "URLError: <urlopen error timed out>",
-      "via": "http"
+      "ts": 1795012512,
+      "ok": true,
+      "ms": 1088,
+      "err": null,
+      "via": "http",
+      "tls_days_left": 4
      },
      "uptime": {
       "24h": 98.264,
@@ -84,7 +88,7 @@
       "30d": 99.571,
       "90d": 99.663
      },
-     "avg_ms_24h": 1071
+     "avg_ms_24h": 1072
     }
    ]
   },
@@ -97,9 +101,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1795012260,
+      "ts": 1795012563,
       "ok": true,
-      "ms": 123,
+      "ms": 112,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -117,9 +121,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1795012292,
+      "ts": 1795012564,
       "ok": true,
-      "ms": 140,
+      "ms": 131,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -137,9 +141,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1795012292,
+      "ts": 1795012563,
       "ok": true,
-      "ms": 137,
+      "ms": 128,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -147,7 +151,7 @@
       "24h": 98.958,
       "7d": 99.788,
       "30d": 99.662,
-      "90d": 98.591
+      "90d": 98.592
      },
      "avg_ms_24h": 221
     },
@@ -155,13 +159,13 @@
      "id": "ip-87-76-211-105",
      "name": "87.76.211.105",
      "type": "ping",
-     "status": "down",
+     "status": "up",
      "last": {
-      "ts": 1795012308,
-      "ok": false,
-      "ms": 8003,
-      "err": "ICMP sans réponse",
-      "via": "ping"
+      "ts": 1795012547,
+      "ok": true,
+      "ms": 129,
+      "err": null,
+      "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 98.611,
@@ -175,13 +179,13 @@
      "id": "ip-87-76-211-106",
      "name": "87.76.211.106",
      "type": "ping",
-     "status": "down",
+     "status": "up",
      "last": {
-      "ts": 1795012308,
-      "ok": false,
-      "ms": 8003,
-      "err": "ICMP sans réponse",
-      "via": "ping"
+      "ts": 1795012547,
+      "ok": true,
+      "ms": 136,
+      "err": null,
+      "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 98.611,
@@ -194,7 +198,7 @@
    ]
   }
  ],
- "overall": "down",
+ "overall": "up",
  "global_uptime": {
   "24h": 98.264,
   "7d": 99.664,

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T14:25:05+00:00",
+ "generated_at": "2026-11-18T14:30:07+00:00",
  "sla_target": 99.9,
  "confirm_failures": 2,
  "groups": [
@@ -12,17 +12,17 @@
      "type": "http",
      "status": "down",
      "last": {
-      "ts": 1795011942,
+      "ts": 1795012244,
       "ok": false,
       "ms": null,
       "err": "URLError: <urlopen error timed out>",
       "via": "http"
      },
      "uptime": {
-      "24h": 98.611,
-      "7d": 99.735,
-      "30d": 99.584,
-      "90d": 99.673
+      "24h": 98.264,
+      "7d": 99.682,
+      "30d": 99.571,
+      "90d": 99.663
      },
      "avg_ms_24h": 912
     },
@@ -32,47 +32,7 @@
      "type": "http",
      "status": "down",
      "last": {
-      "ts": 1795011943,
-      "ok": false,
-      "ms": null,
-      "err": "URLError: <urlopen error timed out>",
-      "via": "http"
-     },
-     "uptime": {
-      "24h": 98.958,
-      "7d": 99.735,
-      "30d": 99.597,
-      "90d": 99.683
-     },
-     "avg_ms_24h": 1042
-    },
-    {
-     "id": "web-game",
-     "name": "game.zelhay-host.fr",
-     "type": "http",
-     "status": "down",
-     "last": {
-      "ts": 1795011943,
-      "ok": false,
-      "ms": null,
-      "err": "URLError: <urlopen error timed out>",
-      "via": "http"
-     },
-     "uptime": {
-      "24h": 94.444,
-      "7d": 99.045,
-      "30d": 99.428,
-      "90d": 99.554
-     },
-     "avg_ms_24h": 1041
-    },
-    {
-     "id": "web-console",
-     "name": "console.zelhay-host.fr",
-     "type": "http",
-     "status": "down",
-     "last": {
-      "ts": 1795011943,
+      "ts": 1795012244,
       "ok": false,
       "ms": null,
       "err": "URLError: <urlopen error timed out>",
@@ -83,6 +43,46 @@
       "7d": 99.682,
       "30d": 99.584,
       "90d": 99.673
+     },
+     "avg_ms_24h": 1041
+    },
+    {
+     "id": "web-game",
+     "name": "game.zelhay-host.fr",
+     "type": "http",
+     "status": "down",
+     "last": {
+      "ts": 1795012244,
+      "ok": false,
+      "ms": null,
+      "err": "URLError: <urlopen error timed out>",
+      "via": "http"
+     },
+     "uptime": {
+      "24h": 94.097,
+      "7d": 98.992,
+      "30d": 99.415,
+      "90d": 99.544
+     },
+     "avg_ms_24h": 1041
+    },
+    {
+     "id": "web-console",
+     "name": "console.zelhay-host.fr",
+     "type": "http",
+     "status": "down",
+     "last": {
+      "ts": 1795012244,
+      "ok": false,
+      "ms": null,
+      "err": "URLError: <urlopen error timed out>",
+      "via": "http"
+     },
+     "uptime": {
+      "24h": 98.264,
+      "7d": 99.628,
+      "30d": 99.571,
+      "90d": 99.663
      },
      "avg_ms_24h": 1071
     }
@@ -97,9 +97,9 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1795011958,
+      "ts": 1795012260,
       "ok": true,
-      "ms": 96,
+      "ms": 123,
       "err": null,
       "via": "ping→tcp_any"
      },
@@ -115,13 +115,13 @@
      "id": "ip-87-76-211-101",
      "name": "87.76.211.101",
      "type": "ping",
-     "status": "down",
+     "status": "up",
      "last": {
-      "ts": 1795012006,
-      "ok": false,
-      "ms": 8002,
-      "err": "ICMP sans réponse",
-      "via": "ping"
+      "ts": 1795012292,
+      "ok": true,
+      "ms": 140,
+      "err": null,
+      "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 98.958,
@@ -135,13 +135,13 @@
      "id": "ip-87-76-211-103",
      "name": "87.76.211.103",
      "type": "ping",
-     "status": "down",
+     "status": "up",
      "last": {
-      "ts": 1795012006,
-      "ok": false,
-      "ms": 8004,
-      "err": "ICMP sans réponse",
-      "via": "ping"
+      "ts": 1795012292,
+      "ok": true,
+      "ms": 137,
+      "err": null,
+      "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 98.958,
@@ -157,19 +157,19 @@
      "type": "ping",
      "status": "down",
      "last": {
-      "ts": 1795012006,
+      "ts": 1795012308,
       "ok": false,
-      "ms": 8002,
+      "ms": 8003,
       "err": "ICMP sans réponse",
       "via": "ping"
      },
      "uptime": {
-      "24h": 98.958,
-      "7d": 99.788,
-      "30d": 99.662,
-      "90d": 99.722
+      "24h": 98.611,
+      "7d": 99.735,
+      "30d": 99.649,
+      "90d": 99.712
      },
-     "avg_ms_24h": 221
+     "avg_ms_24h": 248
     },
     {
      "id": "ip-87-76-211-106",
@@ -177,28 +177,28 @@
      "type": "ping",
      "status": "down",
      "last": {
-      "ts": 1795012006,
+      "ts": 1795012308,
       "ok": false,
       "ms": 8003,
       "err": "ICMP sans réponse",
       "via": "ping"
      },
      "uptime": {
-      "24h": 98.958,
-      "7d": 99.788,
-      "30d": 99.662,
-      "90d": 99.722
+      "24h": 98.611,
+      "7d": 99.735,
+      "30d": 99.649,
+      "90d": 99.712
      },
-     "avg_ms_24h": 221
+     "avg_ms_24h": 248
     }
    ]
   }
  ],
  "overall": "down",
  "global_uptime": {
-  "24h": 98.495,
-  "7d": 99.7,
-  "30d": 99.616,
-  "90d": 99.566
+  "24h": 98.264,
+  "7d": 99.664,
+  "30d": 99.607,
+  "90d": 99.559
  }
 }

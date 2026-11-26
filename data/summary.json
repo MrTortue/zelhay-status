@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T21:58:16+00:00",
+ "generated_at": "2026-11-26T22:03:11+00:00",
  "sla_target": 99.9,
  "confirm_failures": 2,
  "groups": [
@@ -12,15 +12,15 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1795730297,
+      "ts": 1795730592,
       "ok": true,
-      "ms": 830,
+      "ms": 624,
       "err": null,
       "via": "http",
       "tls_days_left": 83
      },
      "uptime": {
-      "24h": 99.293,
+      "24h": 99.296,
       "7d": 99.893,
       "30d": 99.59,
       "90d": 99.706
@@ -33,20 +33,20 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1795730297,
+      "ts": 1795730592,
       "ok": true,
-      "ms": 844,
+      "ms": 599,
       "err": null,
       "via": "http",
       "tls_days_left": 83
      },
      "uptime": {
-      "24h": 99.647,
+      "24h": 99.648,
       "7d": 99.521,
       "30d": 99.513,
       "90d": 99.657
      },
-     "avg_ms_24h": 720
+     "avg_ms_24h": 719
     },
     {
      "id": "web-game",
@@ -54,15 +54,15 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1795730297,
+      "ts": 1795730593,
       "ok": true,
-      "ms": 1011,
+      "ms": 851,
       "err": null,
       "via": "http",
       "tls_days_left": 83
      },
      "uptime": {
-      "24h": 99.293,
+      "24h": 99.296,
       "7d": 99.893,
       "30d": 99.436,
       "90d": 99.608
@@ -75,20 +75,20 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1795730297,
+      "ts": 1795730592,
       "ok": true,
-      "ms": 1163,
+      "ms": 881,
       "err": null,
       "via": "http",
       "tls_days_left": 83
      },
      "uptime": {
-      "24h": 99.293,
+      "24h": 99.296,
       "7d": 99.893,
       "30d": 99.59,
       "90d": 99.706
      },
-     "avg_ms_24h": 949
+     "avg_ms_24h": 948
     }
    ]
   },
@@ -101,14 +101,14 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1795730296,
+      "ts": 1795730644,
       "ok": true,
-      "ms": 144,
+      "ms": 120,
       "err": null,
-      "via": "ping"
+      "via": "ping→tcp_any"
      },
      "uptime": {
-      "24h": 99.647,
+      "24h": 99.648,
       "7d": 99.947,
       "30d": 99.692,
       "90d": 99.788
@@ -121,19 +121,19 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1795730296,
+      "ts": 1795730644,
       "ok": true,
-      "ms": 153,
+      "ms": 136,
       "err": null,
-      "via": "ping"
+      "via": "ping→tcp_any"
      },
      "uptime": {
-      "24h": 99.647,
+      "24h": 99.648,
       "7d": 99.947,
       "30d": 99.654,
       "90d": 99.763
      },
-     "avg_ms_24h": 170
+     "avg_ms_24h": 169
     },
     {
      "id": "ip-87-76-211-103",
@@ -141,14 +141,14 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1795730296,
+      "ts": 1795730644,
       "ok": true,
-      "ms": 155,
+      "ms": 139,
       "err": null,
-      "via": "ping"
+      "via": "ping→tcp_any"
      },
      "uptime": {
-      "24h": 99.647,
+      "24h": 99.648,
       "7d": 99.947,
       "30d": 99.654,
       "90d": 98.832
@@ -161,14 +161,14 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1795730296,
+      "ts": 1795730628,
       "ok": true,
-      "ms": 153,
+      "ms": 142,
       "err": null,
-      "via": "ping"
+      "via": "ping→tcp_any"
      },
      "uptime": {
-      "24h": 99.647,
+      "24h": 99.648,
       "7d": 99.947,
       "30d": 99.641,
       "90d": 99.755
@@ -181,26 +181,26 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1795730296,
+      "ts": 1795730628,
       "ok": true,
-      "ms": 149,
+      "ms": 138,
       "err": null,
-      "via": "ping"
+      "via": "ping→tcp_any"
      },
      "uptime": {
-      "24h": 99.647,
+      "24h": 99.648,
       "7d": 99.947,
       "30d": 99.641,
       "90d": 99.755
      },
-     "avg_ms_24h": 169
+     "avg_ms_24h": 168
     }
    ]
   }
  ],
  "overall": "up",
  "global_uptime": {
-  "24h": 99.529,
+  "24h": 99.531,
   "7d": 99.882,
   "30d": 99.601,
   "90d": 99.619

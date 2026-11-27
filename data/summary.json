@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T06:23:45+00:00",
+ "generated_at": "2026-11-27T06:28:39+00:00",
  "sla_target": 99.9,
  "confirm_failures": 2,
  "groups": [
@@ -12,9 +12,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1795760626,
+      "ts": 1795760920,
       "ok": true,
-      "ms": 576,
+      "ms": 1028,
       "err": null,
       "via": "http",
       "tls_days_left": 82
@@ -25,7 +25,7 @@
       "30d": 99.68,
       "90d": 99.708
      },
-     "avg_ms_24h": 726
+     "avg_ms_24h": 727
     },
     {
      "id": "web-web",
@@ -33,9 +33,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1795760626,
+      "ts": 1795760920,
       "ok": true,
-      "ms": 494,
+      "ms": 1028,
       "err": null,
       "via": "http",
       "tls_days_left": 82
@@ -46,7 +46,7 @@
       "30d": 99.603,
       "90d": 99.66
      },
-     "avg_ms_24h": 701
+     "avg_ms_24h": 699
     },
     {
      "id": "web-game",
@@ -54,9 +54,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1795760626,
+      "ts": 1795760920,
       "ok": true,
-      "ms": 579,
+      "ms": 1026,
       "err": null,
       "via": "http",
       "tls_days_left": 82
@@ -67,7 +67,7 @@
       "30d": 99.526,
       "90d": 99.611
      },
-     "avg_ms_24h": 922
+     "avg_ms_24h": 921
     },
     {
      "id": "web-console",
@@ -75,9 +75,9 @@
      "type": "http",
      "status": "up",
      "last": {
-      "ts": 1795760626,
+      "ts": 1795760920,
       "ok": true,
-      "ms": 664,
+      "ms": 1047,
       "err": null,
       "via": "http",
       "tls_days_left": 82
@@ -88,7 +88,7 @@
       "30d": 99.68,
       "90d": 99.708
      },
-     "avg_ms_24h": 922
+     "avg_ms_24h": 923
     }
    ]
   },
@@ -101,16 +101,16 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1795760625,
+      "ts": 1795760972,
       "ok": true,
-      "ms": 89,
+      "ms": 136,
       "err": null,
-      "via": "ping"
+      "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 100.0,
       "7d": 99.947,
-      "30d": 99.769,
+      "30d": 99.782,
       "90d": 99.789
      },
      "avg_ms_24h": 126
@@ -121,16 +121,16 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1795760625,
+      "ts": 1795760972,
       "ok": true,
-      "ms": 107,
+      "ms": 152,
       "err": null,
-      "via": "ping"
+      "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 100.0,
       "7d": 99.947,
-      "30d": 99.731,
+      "30d": 99.744,
       "90d": 99.765
      },
      "avg_ms_24h": 142
@@ -141,19 +141,19 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1795760625,
+      "ts": 1795760972,
       "ok": true,
-      "ms": 105,
+      "ms": 151,
       "err": null,
-      "via": "ping"
+      "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 100.0,
       "7d": 99.947,
-      "30d": 99.731,
+      "30d": 99.744,
       "90d": 98.842
      },
-     "avg_ms_24h": 142
+     "avg_ms_24h": 141
     },
     {
      "id": "ip-87-76-211-105",
@@ -161,16 +161,16 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1795760625,
+      "ts": 1795760956,
       "ok": true,
-      "ms": 102,
+      "ms": 153,
       "err": null,
-      "via": "ping"
+      "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 100.0,
       "7d": 99.947,
-      "30d": 99.718,
+      "30d": 99.731,
       "90d": 99.757
      },
      "avg_ms_24h": 145
@@ -181,16 +181,16 @@
      "type": "ping",
      "status": "up",
      "last": {
-      "ts": 1795760625,
+      "ts": 1795760956,
       "ok": true,
-      "ms": 103,
+      "ms": 160,
       "err": null,
-      "via": "ping"
+      "via": "ping→tcp_any"
      },
      "uptime": {
       "24h": 100.0,
       "7d": 99.947,
-      "30d": 99.718,
+      "30d": 99.731,
       "90d": 99.757
      },
      "avg_ms_24h": 141
@@ -202,7 +202,7 @@
  "global_uptime": {
   "24h": 100.0,
   "7d": 99.929,
-  "30d": 99.684,
+  "30d": 99.691,
   "90d": 99.622
  }
 }
